@@ -1,0 +1,946 @@
+[
+  {
+    "original_question": "how many times is the fuel propulsion is cng?",
+    "negated_question": "how many times is not the fuel propulsion is cng ?",
+    "original_sql": "SELECT COUNT(col3) FROM table_1_10007452_3 WHERE col5 = 'CNG';",
+    "negated_sql": "SELECT COUNT(col3) FROM table_1_10007452_3 WHERE col5 != 'CNG';",
+    "original_answers": [
+      [
+        0
+      ]
+    ],
+    "negated_answers": [
+      [
+        7
+      ]
+    ],
+    "table_id": "1-10007452-3"
+  },
+  {
+    "original_question": "what is the fuel propulsion where the fleet series (quantity) is 310-329 (20)?",
+    "negated_question": "what is not the fuel propulsion where the fleet series ( quantity ) is 310 - 329 ( 20 ) ?",
+    "original_sql": "SELECT col5 FROM table_1_10007452_3 WHERE col3 = '310-329 (20)';",
+    "negated_sql": "SELECT col5 FROM table_1_10007452_3 WHERE col3 != '310-329 (20)';",
+    "original_answers": [
+      [
+        "cng"
+      ]
+    ],
+    "negated_answers": [
+      [
+        "diesel"
+      ],
+      [
+        "diesel"
+      ],
+      [
+        "diesel"
+      ],
+      [
+        "diesel"
+      ],
+      [
+        "diesel"
+      ],
+      [
+        "hybrid"
+      ]
+    ],
+    "table_id": "1-10007452-3"
+  },
+  {
+    "original_question": "who is the manufacturer for the order year 1998?",
+    "negated_question": "who is not the manufacturer for the order year 1998 ?",
+    "original_sql": "SELECT col1 FROM table_1_10007452_3 WHERE col0 = '1998';",
+    "negated_sql": "SELECT col1 FROM table_1_10007452_3 WHERE col0 != '1998';",
+    "original_answers": [
+      [
+        "gillig"
+      ]
+    ],
+    "negated_answers": [
+      [
+        "gillig"
+      ],
+      [
+        "gillig"
+      ],
+      [
+        "gillig"
+      ],
+      [
+        "gillig"
+      ],
+      [
+        "nfi"
+      ],
+      [
+        "nfi"
+      ]
+    ],
+    "table_id": "1-10007452-3"
+  },
+  {
+    "original_question": "how many times is the model ge40lfr?",
+    "negated_question": "how many times is not the model ge40lfr ?",
+    "original_sql": "SELECT COUNT(col1) FROM table_1_10007452_3 WHERE col2 = 'GE40LFR';",
+    "negated_sql": "SELECT COUNT(col1) FROM table_1_10007452_3 WHERE col2 != 'GE40LFR';",
+    "original_answers": [
+      [
+        0
+      ]
+    ],
+    "negated_answers": [
+      [
+        7
+      ]
+    ],
+    "table_id": "1-10007452-3"
+  },
+  {
+    "original_question": "how many times is the fleet series (quantity) is 468-473 (6)?",
+    "negated_question": "how many times is not the fleet series ( quantity ) is 468 - 473 ( 6 ) ?",
+    "original_sql": "SELECT COUNT(col0) FROM table_1_10007452_3 WHERE col3 = '468-473 (6)';",
+    "negated_sql": "SELECT COUNT(col0) FROM table_1_10007452_3 WHERE col3 != '468-473 (6)';",
+    "original_answers": [
+      [
+        1
+      ]
+    ],
+    "negated_answers": [
+      [
+        6
+      ]
+    ],
+    "table_id": "1-10007452-3"
+  },
+  {
+    "original_question": "what is the powertrain (engine/transmission) when the order year is 2000?",
+    "negated_question": "what is not the powertrain ( engine / transmission ) when the order year is 2000 ?",
+    "original_sql": "SELECT col4 FROM table_1_10007452_3 WHERE col0 = '2000';",
+    "negated_sql": "SELECT col4 FROM table_1_10007452_3 WHERE col0 != '2000';",
+    "original_answers": [
+      [
+        "cummins isc allison wb-400r"
+      ]
+    ],
+    "negated_answers": [
+      [
+        "dd s50egr allison wb-400r"
+      ],
+      [
+        "dd s50 allison wb-400r"
+      ],
+      [
+        "dd s50 allison wb-400r"
+      ],
+      [
+        "cummins isl allison wb-400r"
+      ],
+      [
+        "ford triton v10 ise-thundervolt tb40-hg"
+      ],
+      [
+        "cummins westport isl-g allison wb-400r"
+      ]
+    ],
+    "table_id": "1-10007452-3"
+  },
+  {
+    "original_question": "What school did player number 6 come from?",
+    "negated_question": "What school did not player number 6 come from ?",
+    "original_sql": "SELECT col5 FROM table_1_10015132_1 WHERE col1 = '6';",
+    "negated_sql": "SELECT col5 FROM table_1_10015132_1 WHERE col1 != '6';",
+    "original_answers": [
+      [
+        "michigan state"
+      ]
+    ],
+    "negated_answers": [
+      [
+        "baylor"
+      ],
+      [
+        "arizona"
+      ],
+      [
+        "hyères-toulon ( france )"
+      ],
+      [
+        "florida state"
+      ],
+      [
+        "fresno state"
+      ],
+      [
+        "virtus bologna ( italy )"
+      ],
+      [
+        "georgia"
+      ],
+      [
+        "byu"
+      ],
+      [
+        "illinois"
+      ],
+      [
+        "florida international"
+      ]
+    ],
+    "table_id": "1-10015132-1"
+  },
+  {
+    "original_question": "What school did the player that has been in Toronto from 2012-present come from?",
+    "negated_question": "What school did not the player that has been in Toronto from 2012 - present come from ?",
+    "original_sql": "SELECT col5 FROM table_1_10015132_1 WHERE col4 = '2012-present';",
+    "negated_sql": "SELECT col5 FROM table_1_10015132_1 WHERE col4 != '2012-present';",
+    "original_answers": [
+      [
+        "baylor"
+      ]
+    ],
+    "negated_answers": [
+      [
+        "arizona"
+      ],
+      [
+        "hyères-toulon ( france )"
+      ],
+      [
+        "florida state"
+      ],
+      [
+        "fresno state"
+      ],
+      [
+        "virtus bologna ( italy )"
+      ],
+      [
+        "michigan state"
+      ],
+      [
+        "georgia"
+      ],
+      [
+        "byu"
+      ],
+      [
+        "illinois"
+      ],
+      [
+        "florida international"
+      ]
+    ],
+    "table_id": "1-10015132-1"
+  },
+  {
+    "original_question": "What school did the player that has been in Toronto from 2010-2012 go to?",
+    "negated_question": "What school did not the player that has been in Toronto from 2010 - 2012 go to ?",
+    "original_sql": "SELECT col5 FROM table_1_10015132_1 WHERE col4 = '2010-2012';",
+    "negated_sql": "SELECT col5 FROM table_1_10015132_1 WHERE col4 != '2010-2012';",
+    "original_answers": [
+      [
+        "florida state"
+      ]
+    ],
+    "negated_answers": [
+      [
+        "baylor"
+      ],
+      [
+        "arizona"
+      ],
+      [
+        "hyères-toulon ( france )"
+      ],
+      [
+        "fresno state"
+      ],
+      [
+        "virtus bologna ( italy )"
+      ],
+      [
+        "michigan state"
+      ],
+      [
+        "georgia"
+      ],
+      [
+        "byu"
+      ],
+      [
+        "illinois"
+      ],
+      [
+        "florida international"
+      ]
+    ],
+    "table_id": "1-10015132-1"
+  },
+  {
+    "original_question": "Who played in the Toronto Raptors from 1995-96?",
+    "negated_question": "Who did not play in the Toronto Raptors from 1995 - 96 ?",
+    "original_sql": "SELECT col0 FROM table_1_10015132_14 WHERE col4 = '1995-96';",
+    "negated_sql": "SELECT col0 FROM table_1_10015132_14 WHERE col4 != '1995-96';",
+    "original_answers": [
+      [
+        "dan o'sullivan"
+      ]
+    ],
+    "negated_answers": [
+      [
+        "patrick o'bryant"
+      ],
+      [
+        "jermaine o'neal"
+      ],
+      [
+        "charles oakley"
+      ],
+      [
+        "hakeem olajuwon"
+      ]
+    ],
+    "table_id": "1-10015132-14"
+  },
+  {
+    "original_question": "How many number does Fordham school have?",
+    "negated_question": "How many number does not Fordham school have ?",
+    "original_sql": "SELECT COUNT(col1) FROM table_1_10015132_14 WHERE col5 = 'Fordham';",
+    "negated_sql": "SELECT COUNT(col1) FROM table_1_10015132_14 WHERE col5 != 'Fordham';",
+    "original_answers": [
+      [
+        0
+      ]
+    ],
+    "negated_answers": [
+      [
+        5
+      ]
+    ],
+    "table_id": "1-10015132-14"
+  },
+  {
+    "original_question": "Which school was in Toronto in 2001-02?",
+    "negated_question": "Which school was not in Toronto in 2001 - 02 ?",
+    "original_sql": "SELECT col5 FROM table_1_10015132_14 WHERE col4 = '2001-02';",
+    "negated_sql": "SELECT col5 FROM table_1_10015132_14 WHERE col4 != '2001-02';",
+    "original_answers": [
+      [
+        "houston"
+      ]
+    ],
+    "negated_answers": [
+      [
+        "bradley"
+      ],
+      [
+        "eau claire high school"
+      ],
+      [
+        "fordham"
+      ],
+      [
+        "virginia union"
+      ]
+    ],
+    "table_id": "1-10015132-14"
+  },
+  {
+    "original_question": "What number is the player that played 1998-2001",
+    "negated_question": "What number is not the player that played 1998 - 2001",
+    "original_sql": "SELECT MIN(col1) FROM table_1_10015132_21 WHERE col4 = '1998-2001';",
+    "negated_sql": "SELECT MIN(col1) FROM table_1_10015132_21 WHERE col4 != '1998-2001';",
+    "original_answers": [
+      [
+        42.0
+      ]
+    ],
+    "negated_answers": [
+      [
+        3.0
+      ]
+    ],
+    "table_id": "1-10015132-21"
+  },
+  {
+    "original_question": "what nationality is the player who played from 1997-98",
+    "negated_question": "what nationality is not the player who played from 1997 - 98",
+    "original_sql": "SELECT col2 FROM table_1_10015132_7 WHERE col4 = '1997-98';",
+    "negated_sql": "SELECT col2 FROM table_1_10015132_7 WHERE col4 != '1997-98';",
+    "original_answers": [
+      [
+        "united states"
+      ]
+    ],
+    "negated_answers": [
+      [
+        "united states"
+      ],
+      [
+        "spain"
+      ],
+      [
+        "united states"
+      ],
+      [
+        "united states"
+      ],
+      [
+        "united states"
+      ]
+    ],
+    "table_id": "1-10015132-7"
+  },
+  {
+    "original_question": "How many players were with the school or club team La Salle?",
+    "negated_question": "How many players were not with the school or club team La Salle ?",
+    "original_sql": "SELECT COUNT(col0) FROM table_1_10015132_2 WHERE col5 = 'La Salle';",
+    "negated_sql": "SELECT COUNT(col0) FROM table_1_10015132_2 WHERE col5 != 'La Salle';",
+    "original_answers": [
+      [
+        0
+      ]
+    ],
+    "negated_answers": [
+      [
+        22
+      ]
+    ],
+    "table_id": "1-10015132-2"
+  },
+  {
+    "original_question": "When the scoring rank was 117, what was the best finish?",
+    "negated_question": "When the scoring rank was not 117 , what was the best finish ?",
+    "original_sql": "SELECT col6 FROM table_1_10021158_3 WHERE col10 = '117';",
+    "negated_sql": "SELECT col6 FROM table_1_10021158_3 WHERE col10 != '117';",
+    "original_answers": [
+      [
+        "t22"
+      ]
+    ],
+    "negated_answers": [
+      [
+        "t69"
+      ],
+      [
+        "t39"
+      ],
+      [
+        "1"
+      ],
+      [
+        "t13"
+      ],
+      [
+        "t5"
+      ],
+      [
+        "t7"
+      ],
+      [
+        "t24"
+      ]
+    ],
+    "table_id": "1-10021158-3"
+  },
+  {
+    "original_question": "How many wins were there when the money list rank was 183?",
+    "negated_question": "How many wins were not there when the money list rank was 183 ?",
+    "original_sql": "SELECT COUNT(col3) FROM table_1_10021158_3 WHERE col8 = '183';",
+    "negated_sql": "SELECT COUNT(col3) FROM table_1_10021158_3 WHERE col8 != '183';",
+    "original_answers": [
+      [
+        1
+      ]
+    ],
+    "negated_answers": [
+      [
+        7
+      ]
+    ],
+    "table_id": "1-10021158-3"
+  },
+  {
+    "original_question": "When the money list rank was n/a, what was the scoring average?",
+    "negated_question": "When the money list rank was not n / a , what was the scoring average ?",
+    "original_sql": "SELECT col9 FROM table_1_10021158_3 WHERE col8 = 'n/a';",
+    "negated_sql": "SELECT col9 FROM table_1_10021158_3 WHERE col8 != 'n/a';",
+    "original_answers": [
+      [
+        "75.00"
+      ]
+    ],
+    "negated_answers": [
+      [
+        "73.75"
+      ],
+      [
+        "73.09"
+      ],
+      [
+        "73.75"
+      ],
+      [
+        "72.51"
+      ],
+      [
+        "73.04"
+      ],
+      [
+        "74.23"
+      ],
+      [
+        "74.37"
+      ]
+    ],
+    "table_id": "1-10021158-3"
+  },
+  {
+    "original_question": "When did the Metrostars have their first Rookie of the Year winner?",
+    "negated_question": "When did not the Metrostars have their first Rookie of the Year winner ?",
+    "original_sql": "SELECT MIN(col0) FROM table_1_1004033_1 WHERE col4 = 'MetroStars';",
+    "negated_sql": "SELECT MIN(col0) FROM table_1_1004033_1 WHERE col4 != 'MetroStars';",
+    "original_answers": [
+      [
+        null
+      ]
+    ],
+    "negated_answers": [
+      [
+        1996.0
+      ]
+    ],
+    "table_id": "1-1004033-1"
+  },
+  {
+    "original_question": "How many teams had a #1 draft pick that won the Rookie of the Year Award?",
+    "negated_question": "How many teams had not a # 1 draft pick that won the Rookie of the Year Award ?",
+    "original_sql": "SELECT COUNT(col4) FROM table_1_1004033_1 WHERE col5 = '1';",
+    "negated_sql": "SELECT COUNT(col4) FROM table_1_1004033_1 WHERE col5 != '1';",
+    "original_answers": [
+      [
+        1
+      ]
+    ],
+    "negated_answers": [
+      [
+        15
+      ]
+    ],
+    "table_id": "1-1004033-1"
+  },
+  {
+    "original_question": "what's the total number of singles w-l with doubles w-l of 0–0 and total w-l of 3–1",
+    "negated_question": "not what's the total number of singles w-l with doubles w-l of 0–0 and total w-l of 3–1",
+    "original_sql": "SELECT COUNT(col3) FROM table_1_10023387_1 WHERE col4 = '0–0' AND col2 = '3–1';",
+    "negated_sql": "SELECT COUNT(col3) FROM table_1_10023387_1 WHERE col4 != '0–0' AND col2 != '3–1';",
+    "original_answers": [
+      [
+        1
+      ]
+    ],
+    "negated_answers": [
+      [
+        39
+      ]
+    ],
+    "table_id": "1-10023387-1"
+  },
+  {
+    "original_question": "What is year of construction of spitallamm?",
+    "negated_question": "What is not year of construction of spitallamm ?",
+    "original_sql": "SELECT MIN(col5) FROM table_1_10020178_1 WHERE col0 = 'Spitallamm';",
+    "negated_sql": "SELECT MIN(col5) FROM table_1_10020178_1 WHERE col0 != 'Spitallamm';",
+    "original_answers": [
+      [
+        null
+      ]
+    ],
+    "negated_answers": [
+      [
+        1924.0
+      ]
+    ],
+    "table_id": "1-10020178-1"
+  },
+  {
+    "original_question": "What is the number of chapters listed for the fraternity with a headquarters in Austin, Texas?",
+    "negated_question": "What is not the number of chapters listed for the fraternity with a headquarters in Austin , Texas ?",
+    "original_sql": "SELECT MAX(col3) FROM table_1_10054296_1 WHERE col2 = 'Fraternity' AND col1 = 'Austin, Texas';",
+    "negated_sql": "SELECT MAX(col3) FROM table_1_10054296_1 WHERE col2 != 'Fraternity' AND col1 != 'Austin, Texas';",
+    "original_answers": [
+      [
+        null
+      ]
+    ],
+    "negated_answers": [
+      [
+        26.0
+      ]
+    ],
+    "table_id": "1-10054296-1"
+  },
+  {
+    "original_question": "Name the member that has 12 chapters",
+    "negated_question": "Name the member that has not 12 chapters",
+    "original_sql": "SELECT col0 FROM table_1_10054296_1 WHERE col3 = 12;",
+    "negated_sql": "SELECT col0 FROM table_1_10054296_1 WHERE col3 != 12;",
+    "original_answers": [
+      [
+        "delta psi epsilon"
+      ]
+    ],
+    "negated_answers": [
+      [
+        "alpha nu omega"
+      ],
+      [
+        "men of god"
+      ],
+      [
+        "zeta phi zeta"
+      ],
+      [
+        "gamma phi delta"
+      ]
+    ],
+    "table_id": "1-10054296-1"
+  },
+  {
+    "original_question": "what is the number of relapsing fever when malaria is 3000",
+    "negated_question": "what is not the number of relapsing fever when malaria is 3000",
+    "original_sql": "SELECT MIN(col3) FROM table_1_1007688_1 WHERE col5 = '3000';",
+    "negated_sql": "SELECT MIN(col3) FROM table_1_1007688_1 WHERE col5 != '3000';",
+    "original_answers": [
+      [
+        6.0
+      ]
+    ],
+    "negated_answers": [
+      [
+        4.0
+      ]
+    ],
+    "table_id": "1-1007688-1"
+  },
+  {
+    "original_question": "what is the typhoid fever number for the year 1934",
+    "negated_question": "what is not the typhoid fever number for the year 1934",
+    "original_sql": "SELECT col2 FROM table_1_1007688_1 WHERE col0 = '1934';",
+    "negated_sql": "SELECT col2 FROM table_1_1007688_1 WHERE col0 != '1934';",
+    "original_answers": [
+      [
+        200.0
+      ]
+    ],
+    "negated_answers": [
+      [
+        424.0
+      ],
+      [
+        293.0
+      ],
+      [
+        170.0
+      ],
+      [
+        190.0
+      ],
+      [
+        260.0
+      ],
+      [
+        300.0
+      ],
+      [
+        210.0
+      ],
+      [
+        140.0
+      ]
+    ],
+    "table_id": "1-1007688-1"
+  },
+  {
+    "original_question": "What are all the typhus number when smallpox is 4",
+    "negated_question": "What are not all the typhus number when smallpox is 4",
+    "original_sql": "SELECT col1 FROM table_1_1007688_1 WHERE col4 = 4;",
+    "negated_sql": "SELECT col1 FROM table_1_1007688_1 WHERE col4 != 4;",
+    "original_answers": [
+      [
+        120.0
+      ]
+    ],
+    "negated_answers": [
+      [
+        120.0
+      ],
+      [
+        1300.0
+      ],
+      [
+        40.0
+      ],
+      [
+        60.0
+      ],
+      [
+        80.0
+      ],
+      [
+        220.0
+      ],
+      [
+        800.0
+      ],
+      [
+        410.0
+      ]
+    ],
+    "table_id": "1-1007688-1"
+  },
+  {
+    "original_question": "what is the number of smallpox when typhoid fever is 293",
+    "negated_question": "what is not the number of smallpox when typhoid fever is 293",
+    "original_sql": "SELECT MAX(col4) FROM table_1_1007688_1 WHERE col2 = 293;",
+    "negated_sql": "SELECT MAX(col4) FROM table_1_1007688_1 WHERE col2 != 293;",
+    "original_answers": [
+      [
+        106.0
+      ]
+    ],
+    "negated_answers": [
+      [
+        80.0
+      ]
+    ],
+    "table_id": "1-1007688-1"
+  },
+  {
+    "original_question": "what is the typhoid fever number for the year 1929",
+    "negated_question": "what is not the typhoid fever number for the year 1929",
+    "original_sql": "SELECT col2 FROM table_1_1007688_1 WHERE col0 = '1929';",
+    "negated_sql": "SELECT col2 FROM table_1_1007688_1 WHERE col0 != '1929';",
+    "original_answers": [
+      [
+        170.0
+      ]
+    ],
+    "negated_answers": [
+      [
+        424.0
+      ],
+      [
+        293.0
+      ],
+      [
+        190.0
+      ],
+      [
+        260.0
+      ],
+      [
+        300.0
+      ],
+      [
+        210.0
+      ],
+      [
+        200.0
+      ],
+      [
+        140.0
+      ]
+    ],
+    "table_id": "1-1007688-1"
+  },
+  {
+    "original_question": "How many schools are in Bloomington, IN?",
+    "negated_question": "How many schools are not in Bloomington , IN ?",
+    "original_sql": "SELECT COUNT(col2) FROM table_1_10082596_1 WHERE col1 = 'Bloomington, IN';",
+    "negated_sql": "SELECT COUNT(col2) FROM table_1_10082596_1 WHERE col1 != 'Bloomington, IN';",
+    "original_answers": [
+      [
+        0
+      ]
+    ],
+    "negated_answers": [
+      [
+        5
+      ]
+    ],
+    "table_id": "1-10082596-1"
+  },
+  {
+    "original_question": "How many of the schools are designated private/Presbyterian?",
+    "negated_question": "How many of the schools are not designated private / Presbyterian ?",
+    "original_sql": "SELECT COUNT(col1) FROM table_1_10082596_1 WHERE col3 = 'Private/Presbyterian';",
+    "negated_sql": "SELECT COUNT(col1) FROM table_1_10082596_1 WHERE col3 != 'Private/Presbyterian';",
+    "original_answers": [
+      [
+        0
+      ]
+    ],
+    "negated_answers": [
+      [
+        5
+      ]
+    ],
+    "table_id": "1-10082596-1"
+  },
+  {
+    "original_question": "In what year was Lindenwood University founded?",
+    "negated_question": "In what year was not Lindenwood University founded ?",
+    "original_sql": "SELECT MIN(col2) FROM table_1_10082596_1 WHERE col0 = 'Lindenwood University';",
+    "negated_sql": "SELECT MIN(col2) FROM table_1_10082596_1 WHERE col0 != 'Lindenwood University';",
+    "original_answers": [
+      [
+        null
+      ]
+    ],
+    "negated_answers": [
+      [
+        1804.0
+      ]
+    ],
+    "table_id": "1-10082596-1"
+  },
+  {
+    "original_question": "How many of the schools listed are in Ames, IA?",
+    "negated_question": "How many of the schools listed are not in Ames , IA ?",
+    "original_sql": "SELECT COUNT(col6) FROM table_1_10082596_1 WHERE col1 = 'Ames, IA';",
+    "negated_sql": "SELECT COUNT(col6) FROM table_1_10082596_1 WHERE col1 != 'Ames, IA';",
+    "original_answers": [
+      [
+        0
+      ]
+    ],
+    "negated_answers": [
+      [
+        5
+      ]
+    ],
+    "table_id": "1-10082596-1"
+  },
+  {
+    "original_question": "How many countries (endonym) has the capital (endonym) of Jakarta?",
+    "negated_question": "How many countries ( endonym ) has not the capital ( endonym ) of Jakarta ?",
+    "original_sql": "SELECT COUNT(col2) FROM table_1_1008653_9 WHERE col3 = 'Jakarta';",
+    "negated_sql": "SELECT COUNT(col2) FROM table_1_1008653_9 WHERE col3 != 'Jakarta';",
+    "original_answers": [
+      [
+        0
+      ]
+    ],
+    "negated_answers": [
+      [
+        6
+      ]
+    ],
+    "table_id": "1-1008653-9"
+  },
+  {
+    "original_question": "The season premiere aired on September 11, 2000 aired on how many networks? ",
+    "negated_question": "The season premiere do not air on September 11 , 2000 aired on how many networks ?",
+    "original_sql": "SELECT COUNT(col1) FROM table_1_1009087_1 WHERE col2 = 'September 11, 2000';",
+    "negated_sql": "SELECT COUNT(col1) FROM table_1_1009087_1 WHERE col2 != 'September 11, 2000';",
+    "original_answers": [
+      [
+        0
+      ]
+    ],
+    "negated_answers": [
+      [
+        7
+      ]
+    ],
+    "table_id": "1-1009087-1"
+  },
+  {
+    "original_question": "what is the minimum population canada 2011 census with seat of rcm being cowansville",
+    "negated_question": "what is not the minimum   population canada 2011 census   with   seat of rcm   being cowansville",
+    "original_sql": "SELECT MIN(col1) FROM table_1_1011906_1 WHERE col4 = 'Cowansville';",
+    "negated_sql": "SELECT MIN(col1) FROM table_1_1011906_1 WHERE col4 != 'Cowansville';",
+    "original_answers": [
+      [
+        null
+      ]
+    ],
+    "negated_answers": [
+      [
+        15381.0
+      ]
+    ],
+    "table_id": "1-1011906-1"
+  },
+  {
+    "original_question": "How many County Kerry have 53% Irish speakers?",
+    "negated_question": "How many County Kerry have not 53 % Irish speakers ?",
+    "original_sql": "SELECT COUNT(col1) FROM table_1_101196_1 WHERE col4 = '53%' AND col0 = 'County Kerry';",
+    "negated_sql": "SELECT COUNT(col1) FROM table_1_101196_1 WHERE col4 != '53%' AND col0 != 'County Kerry';",
+    "original_answers": [
+      [
+        0
+      ]
+    ],
+    "negated_answers": [
+      [
+        45
+      ]
+    ],
+    "table_id": "1-101196-1"
+  },
+  {
+    "original_question": "What is the the Chinese population for the state that has a Filipino population of 1474707?",
+    "negated_question": "What is not the the Chinese population for the state that has a Filipino population of 1474707 ?",
+    "original_sql": "SELECT MIN(col2) FROM table_1_10118412_6 WHERE col3 = 1474707;",
+    "negated_sql": "SELECT MIN(col2) FROM table_1_10118412_6 WHERE col3 != 1474707;",
+    "original_answers": [
+      [
+        1451537.0
+      ]
+    ],
+    "negated_answers": [
+      [
+        1340.0
+      ]
+    ],
+    "table_id": "1-10118412-6"
+  },
+  {
+    "original_question": "How many States have an Indian population of 30947?",
+    "negated_question": "How many States have not an Indian population of 30947 ?",
+    "original_sql": "SELECT COUNT(col3) FROM table_1_10118412_6 WHERE col4 = 30947;",
+    "negated_sql": "SELECT COUNT(col3) FROM table_1_10118412_6 WHERE col4 != 30947;",
+    "original_answers": [
+      [
+        1
+      ]
+    ],
+    "negated_answers": [
+      [
+        51
+      ]
+    ],
+    "table_id": "1-10118412-6"
+  },
+  {
+    "original_question": "How many Australians were in the UN commission on Korea?",
+    "negated_question": "How many Australians were not in the UN commission on Korea ?",
+    "original_sql": "SELECT COUNT(col4) FROM table_1_10121127_1 WHERE col1 = 'UN Commission on Korea';",
+    "negated_sql": "SELECT COUNT(col4) FROM table_1_10121127_1 WHERE col1 != 'UN Commission on Korea';",
+    "original_answers": [
+      [
+        0
+      ]
+    ],
+    "negated_answers": [
+      [
+        23
+      ]
+    ],
+    "table_id": "1-10121127-1"
+  }
+]

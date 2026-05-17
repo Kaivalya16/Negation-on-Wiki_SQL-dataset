@@ -1,0 +1,5459 @@
+[
+  {
+    "type": "basic_negation",
+    "original_question": "how many times is the fuel propulsion is cng?",
+    "generated_question": "how many times is not the fuel propulsion is cng?",
+    "original_sql": "SELECT COUNT(col3) FROM table_1_10007452_3 WHERE col5 = 'CNG';",
+    "generated_sql": "SELECT COUNT(col3) FROM table_1_10007452_3 WHERE col5 != 'CNG';",
+    "original_answers": [
+      [
+        0
+      ]
+    ],
+    "generated_answers": [
+      [
+        7
+      ]
+    ],
+    "table_id": "1-10007452-3"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "what is the fuel propulsion where the fleet series (quantity) is 310-329 (20)?",
+    "generated_question": "what is not the fuel propulsion where the fleet series ( quantity ) is 310 - 329 ( 20 )?",
+    "original_sql": "SELECT col5 FROM table_1_10007452_3 WHERE col3 = '310-329 (20)';",
+    "generated_sql": "SELECT col5 FROM table_1_10007452_3 WHERE col3 != '310-329 (20)';",
+    "original_answers": [
+      [
+        "cng"
+      ]
+    ],
+    "generated_answers": [
+      [
+        "diesel"
+      ],
+      [
+        "diesel"
+      ],
+      [
+        "diesel"
+      ],
+      [
+        "diesel"
+      ],
+      [
+        "diesel"
+      ],
+      [
+        "hybrid"
+      ]
+    ],
+    "table_id": "1-10007452-3"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "who is the manufacturer for the order year 1998?",
+    "generated_question": "who is not the manufacturer for the order year 1998?",
+    "original_sql": "SELECT col1 FROM table_1_10007452_3 WHERE col0 = '1998';",
+    "generated_sql": "SELECT col1 FROM table_1_10007452_3 WHERE col0 != '1998';",
+    "original_answers": [
+      [
+        "gillig"
+      ]
+    ],
+    "generated_answers": [
+      [
+        "gillig"
+      ],
+      [
+        "gillig"
+      ],
+      [
+        "gillig"
+      ],
+      [
+        "gillig"
+      ],
+      [
+        "nfi"
+      ],
+      [
+        "nfi"
+      ]
+    ],
+    "table_id": "1-10007452-3"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "how many times is the model ge40lfr?",
+    "generated_question": "how many times is not the model ge40lfr?",
+    "original_sql": "SELECT COUNT(col1) FROM table_1_10007452_3 WHERE col2 = 'GE40LFR';",
+    "generated_sql": "SELECT COUNT(col1) FROM table_1_10007452_3 WHERE col2 != 'GE40LFR';",
+    "original_answers": [
+      [
+        0
+      ]
+    ],
+    "generated_answers": [
+      [
+        7
+      ]
+    ],
+    "table_id": "1-10007452-3"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "how many times is the fleet series (quantity) is 468-473 (6)?",
+    "generated_question": "how many times is not the fleet series ( quantity ) is 468 - 473 ( 6 )?",
+    "original_sql": "SELECT COUNT(col0) FROM table_1_10007452_3 WHERE col3 = '468-473 (6)';",
+    "generated_sql": "SELECT COUNT(col0) FROM table_1_10007452_3 WHERE col3 != '468-473 (6)';",
+    "original_answers": [
+      [
+        1
+      ]
+    ],
+    "generated_answers": [
+      [
+        6
+      ]
+    ],
+    "table_id": "1-10007452-3"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "what is the powertrain (engine/transmission) when the order year is 2000?",
+    "generated_question": "what is not the powertrain ( engine / transmission ) when the order year is 2000?",
+    "original_sql": "SELECT col4 FROM table_1_10007452_3 WHERE col0 = '2000';",
+    "generated_sql": "SELECT col4 FROM table_1_10007452_3 WHERE col0 != '2000';",
+    "original_answers": [
+      [
+        "cummins isc allison wb-400r"
+      ]
+    ],
+    "generated_answers": [
+      [
+        "dd s50egr allison wb-400r"
+      ],
+      [
+        "dd s50 allison wb-400r"
+      ],
+      [
+        "dd s50 allison wb-400r"
+      ],
+      [
+        "cummins isl allison wb-400r"
+      ],
+      [
+        "ford triton v10 ise-thundervolt tb40-hg"
+      ],
+      [
+        "cummins westport isl-g allison wb-400r"
+      ]
+    ],
+    "table_id": "1-10007452-3"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "What school did player number 6 come from?",
+    "generated_question": "What school did not player number 6 come from?",
+    "original_sql": "SELECT col5 FROM table_1_10015132_1 WHERE col1 = '6';",
+    "generated_sql": "SELECT col5 FROM table_1_10015132_1 WHERE col1 != '6';",
+    "original_answers": [
+      [
+        "michigan state"
+      ]
+    ],
+    "generated_answers": [
+      [
+        "baylor"
+      ],
+      [
+        "arizona"
+      ],
+      [
+        "hyères-toulon ( france )"
+      ],
+      [
+        "florida state"
+      ],
+      [
+        "fresno state"
+      ],
+      [
+        "virtus bologna ( italy )"
+      ],
+      [
+        "georgia"
+      ],
+      [
+        "byu"
+      ],
+      [
+        "illinois"
+      ],
+      [
+        "florida international"
+      ]
+    ],
+    "table_id": "1-10015132-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "What school did the player that has been in Toronto from 2012-present come from?",
+    "generated_question": "What school did not the player that has been in Toronto from 2012 - present come from?",
+    "original_sql": "SELECT col5 FROM table_1_10015132_1 WHERE col4 = '2012-present';",
+    "generated_sql": "SELECT col5 FROM table_1_10015132_1 WHERE col4 != '2012-present';",
+    "original_answers": [
+      [
+        "baylor"
+      ]
+    ],
+    "generated_answers": [
+      [
+        "arizona"
+      ],
+      [
+        "hyères-toulon ( france )"
+      ],
+      [
+        "florida state"
+      ],
+      [
+        "fresno state"
+      ],
+      [
+        "virtus bologna ( italy )"
+      ],
+      [
+        "michigan state"
+      ],
+      [
+        "georgia"
+      ],
+      [
+        "byu"
+      ],
+      [
+        "illinois"
+      ],
+      [
+        "florida international"
+      ]
+    ],
+    "table_id": "1-10015132-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "What school did the player that has been in Toronto from 2010-2012 go to?",
+    "generated_question": "What school did not the player that has been in Toronto from 2010 - 2012 go to?",
+    "original_sql": "SELECT col5 FROM table_1_10015132_1 WHERE col4 = '2010-2012';",
+    "generated_sql": "SELECT col5 FROM table_1_10015132_1 WHERE col4 != '2010-2012';",
+    "original_answers": [
+      [
+        "florida state"
+      ]
+    ],
+    "generated_answers": [
+      [
+        "baylor"
+      ],
+      [
+        "arizona"
+      ],
+      [
+        "hyères-toulon ( france )"
+      ],
+      [
+        "fresno state"
+      ],
+      [
+        "virtus bologna ( italy )"
+      ],
+      [
+        "michigan state"
+      ],
+      [
+        "georgia"
+      ],
+      [
+        "byu"
+      ],
+      [
+        "illinois"
+      ],
+      [
+        "florida international"
+      ]
+    ],
+    "table_id": "1-10015132-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "Who played in the Toronto Raptors from 1995-96?",
+    "generated_question": "Who did not play in the Toronto Raptors from 1995 - 96?",
+    "original_sql": "SELECT col0 FROM table_1_10015132_14 WHERE col4 = '1995-96';",
+    "generated_sql": "SELECT col0 FROM table_1_10015132_14 WHERE col4 != '1995-96';",
+    "original_answers": [
+      [
+        "dan o'sullivan"
+      ]
+    ],
+    "generated_answers": [
+      [
+        "patrick o'bryant"
+      ],
+      [
+        "jermaine o'neal"
+      ],
+      [
+        "charles oakley"
+      ],
+      [
+        "hakeem olajuwon"
+      ]
+    ],
+    "table_id": "1-10015132-14"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "How many number does Fordham school have?",
+    "generated_question": "How many number does not Fordham school have?",
+    "original_sql": "SELECT COUNT(col1) FROM table_1_10015132_14 WHERE col5 = 'Fordham';",
+    "generated_sql": "SELECT COUNT(col1) FROM table_1_10015132_14 WHERE col5 != 'Fordham';",
+    "original_answers": [
+      [
+        0
+      ]
+    ],
+    "generated_answers": [
+      [
+        5
+      ]
+    ],
+    "table_id": "1-10015132-14"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "Which school was in Toronto in 2001-02?",
+    "generated_question": "Which school was not in Toronto in 2001 - 02?",
+    "original_sql": "SELECT col5 FROM table_1_10015132_14 WHERE col4 = '2001-02';",
+    "generated_sql": "SELECT col5 FROM table_1_10015132_14 WHERE col4 != '2001-02';",
+    "original_answers": [
+      [
+        "houston"
+      ]
+    ],
+    "generated_answers": [
+      [
+        "bradley"
+      ],
+      [
+        "eau claire high school"
+      ],
+      [
+        "fordham"
+      ],
+      [
+        "virginia union"
+      ]
+    ],
+    "table_id": "1-10015132-14"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "What number is the player that played 1998-2001",
+    "generated_question": "What number is not the player that played 1998 - 2001",
+    "original_sql": "SELECT MIN(col1) FROM table_1_10015132_21 WHERE col4 = '1998-2001';",
+    "generated_sql": "SELECT MIN(col1) FROM table_1_10015132_21 WHERE col4 != '1998-2001';",
+    "original_answers": [
+      [
+        42.0
+      ]
+    ],
+    "generated_answers": [
+      [
+        3.0
+      ]
+    ],
+    "table_id": "1-10015132-21"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "what nationality is the player who played from 1997-98",
+    "generated_question": "what nationality is not the player who played from 1997 - 98",
+    "original_sql": "SELECT col2 FROM table_1_10015132_7 WHERE col4 = '1997-98';",
+    "generated_sql": "SELECT col2 FROM table_1_10015132_7 WHERE col4 != '1997-98';",
+    "original_answers": [
+      [
+        "united states"
+      ]
+    ],
+    "generated_answers": [
+      [
+        "united states"
+      ],
+      [
+        "spain"
+      ],
+      [
+        "united states"
+      ],
+      [
+        "united states"
+      ],
+      [
+        "united states"
+      ]
+    ],
+    "table_id": "1-10015132-7"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "How many players were with the school or club team La Salle?",
+    "generated_question": "How many players were not with the school or club team La Salle?",
+    "original_sql": "SELECT COUNT(col0) FROM table_1_10015132_2 WHERE col5 = 'La Salle';",
+    "generated_sql": "SELECT COUNT(col0) FROM table_1_10015132_2 WHERE col5 != 'La Salle';",
+    "original_answers": [
+      [
+        0
+      ]
+    ],
+    "generated_answers": [
+      [
+        22
+      ]
+    ],
+    "table_id": "1-10015132-2"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "When the scoring rank was 117, what was the best finish?",
+    "generated_question": "When the scoring rank was not 117, what was the best finish?",
+    "original_sql": "SELECT col6 FROM table_1_10021158_3 WHERE col10 = '117';",
+    "generated_sql": "SELECT col6 FROM table_1_10021158_3 WHERE col10 != '117';",
+    "original_answers": [
+      [
+        "t22"
+      ]
+    ],
+    "generated_answers": [
+      [
+        "t69"
+      ],
+      [
+        "t39"
+      ],
+      [
+        "1"
+      ],
+      [
+        "t13"
+      ],
+      [
+        "t5"
+      ],
+      [
+        "t7"
+      ],
+      [
+        "t24"
+      ]
+    ],
+    "table_id": "1-10021158-3"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "How many wins were there when the money list rank was 183?",
+    "generated_question": "How many wins were not there when the money list rank was 183?",
+    "original_sql": "SELECT COUNT(col3) FROM table_1_10021158_3 WHERE col8 = '183';",
+    "generated_sql": "SELECT COUNT(col3) FROM table_1_10021158_3 WHERE col8 != '183';",
+    "original_answers": [
+      [
+        1
+      ]
+    ],
+    "generated_answers": [
+      [
+        7
+      ]
+    ],
+    "table_id": "1-10021158-3"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "When the money list rank was n/a, what was the scoring average?",
+    "generated_question": "When the money list rank was not n / a, what was the scoring average?",
+    "original_sql": "SELECT col9 FROM table_1_10021158_3 WHERE col8 = 'n/a';",
+    "generated_sql": "SELECT col9 FROM table_1_10021158_3 WHERE col8 != 'n/a';",
+    "original_answers": [
+      [
+        "75.00"
+      ]
+    ],
+    "generated_answers": [
+      [
+        "73.75"
+      ],
+      [
+        "73.09"
+      ],
+      [
+        "73.75"
+      ],
+      [
+        "72.51"
+      ],
+      [
+        "73.04"
+      ],
+      [
+        "74.23"
+      ],
+      [
+        "74.37"
+      ]
+    ],
+    "table_id": "1-10021158-3"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "When did the Metrostars have their first Rookie of the Year winner?",
+    "generated_question": "When did not the Metrostars have their first Rookie of the Year winner?",
+    "original_sql": "SELECT MIN(col0) FROM table_1_1004033_1 WHERE col4 = 'MetroStars';",
+    "generated_sql": "SELECT MIN(col0) FROM table_1_1004033_1 WHERE col4 != 'MetroStars';",
+    "original_answers": [
+      [
+        null
+      ]
+    ],
+    "generated_answers": [
+      [
+        1996.0
+      ]
+    ],
+    "table_id": "1-1004033-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "How many teams had a #1 draft pick that won the Rookie of the Year Award?",
+    "generated_question": "How many teams had not a # 1 draft pick that won the Rookie of the Year Award?",
+    "original_sql": "SELECT COUNT(col4) FROM table_1_1004033_1 WHERE col5 = '1';",
+    "generated_sql": "SELECT COUNT(col4) FROM table_1_1004033_1 WHERE col5 != '1';",
+    "original_answers": [
+      [
+        1
+      ]
+    ],
+    "generated_answers": [
+      [
+        15
+      ]
+    ],
+    "table_id": "1-1004033-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "what's the total number of singles w-l with doubles w-l of 0–0 and total w-l of 3–1",
+    "generated_question": "not what's the total number of singles w-l with doubles w-l of 0–0 and total w-l of 3–1",
+    "original_sql": "SELECT COUNT(col3) FROM table_1_10023387_1 WHERE col4 = '0–0' AND col2 = '3–1';",
+    "generated_sql": "SELECT COUNT(col3) FROM table_1_10023387_1 WHERE col4 != '0–0' AND col2 != '3–1';",
+    "original_answers": [
+      [
+        1
+      ]
+    ],
+    "generated_answers": [
+      [
+        39
+      ]
+    ],
+    "table_id": "1-10023387-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "What is year of construction of spitallamm?",
+    "generated_question": "What is not year of construction of spitallamm?",
+    "original_sql": "SELECT MIN(col5) FROM table_1_10020178_1 WHERE col0 = 'Spitallamm';",
+    "generated_sql": "SELECT MIN(col5) FROM table_1_10020178_1 WHERE col0 != 'Spitallamm';",
+    "original_answers": [
+      [
+        null
+      ]
+    ],
+    "generated_answers": [
+      [
+        1924.0
+      ]
+    ],
+    "table_id": "1-10020178-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "What is the number of chapters listed for the fraternity with a headquarters in Austin, Texas?",
+    "generated_question": "What is not the number of chapters listed for the fraternity with a headquarters in Austin, Texas?",
+    "original_sql": "SELECT MAX(col3) FROM table_1_10054296_1 WHERE col2 = 'Fraternity' AND col1 = 'Austin, Texas';",
+    "generated_sql": "SELECT MAX(col3) FROM table_1_10054296_1 WHERE col2 != 'Fraternity' AND col1 != 'Austin, Texas';",
+    "original_answers": [
+      [
+        null
+      ]
+    ],
+    "generated_answers": [
+      [
+        26.0
+      ]
+    ],
+    "table_id": "1-10054296-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "Name the member that has 12 chapters",
+    "generated_question": "Name the member that has not 12 chapters",
+    "original_sql": "SELECT col0 FROM table_1_10054296_1 WHERE col3 = 12;",
+    "generated_sql": "SELECT col0 FROM table_1_10054296_1 WHERE col3 != 12;",
+    "original_answers": [
+      [
+        "delta psi epsilon"
+      ]
+    ],
+    "generated_answers": [
+      [
+        "alpha nu omega"
+      ],
+      [
+        "men of god"
+      ],
+      [
+        "zeta phi zeta"
+      ],
+      [
+        "gamma phi delta"
+      ]
+    ],
+    "table_id": "1-10054296-1"
+  },
+  {
+    "type": "numerical_expansion",
+    "original_question": "Name the member that has 12 chapters",
+    "generated_question": "Name the member that has 12 chapters",
+    "original_sql": "SELECT col0 FROM table_1_10054296_1 WHERE col3 = 12;",
+    "generated_sql": "SELECT col0 FROM table_1_10054296_1 WHERE col3 NOT BETWEEN 9 AND 14;",
+    "original_answers": [
+      [
+        "delta psi epsilon"
+      ]
+    ],
+    "generated_answers": [
+      [
+        "alpha nu omega"
+      ],
+      [
+        "men of god"
+      ],
+      [
+        "zeta phi zeta"
+      ],
+      [
+        "gamma phi delta"
+      ]
+    ],
+    "table_id": "1-10054296-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "what is the number of relapsing fever when malaria is 3000",
+    "generated_question": "what is not the number of relapsing fever when malaria is 3000",
+    "original_sql": "SELECT MIN(col3) FROM table_1_1007688_1 WHERE col5 = '3000';",
+    "generated_sql": "SELECT MIN(col3) FROM table_1_1007688_1 WHERE col5 != '3000';",
+    "original_answers": [
+      [
+        6.0
+      ]
+    ],
+    "generated_answers": [
+      [
+        4.0
+      ]
+    ],
+    "table_id": "1-1007688-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "what is the typhoid fever number for the year 1934",
+    "generated_question": "what is not the typhoid fever number for the year 1934",
+    "original_sql": "SELECT col2 FROM table_1_1007688_1 WHERE col0 = '1934';",
+    "generated_sql": "SELECT col2 FROM table_1_1007688_1 WHERE col0 != '1934';",
+    "original_answers": [
+      [
+        200.0
+      ]
+    ],
+    "generated_answers": [
+      [
+        424.0
+      ],
+      [
+        293.0
+      ],
+      [
+        170.0
+      ],
+      [
+        190.0
+      ],
+      [
+        260.0
+      ],
+      [
+        300.0
+      ],
+      [
+        210.0
+      ],
+      [
+        140.0
+      ]
+    ],
+    "table_id": "1-1007688-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "What are all the typhus number when smallpox is 4",
+    "generated_question": "What are not all the typhus number when smallpox is 4",
+    "original_sql": "SELECT col1 FROM table_1_1007688_1 WHERE col4 = 4;",
+    "generated_sql": "SELECT col1 FROM table_1_1007688_1 WHERE col4 != 4;",
+    "original_answers": [
+      [
+        120.0
+      ]
+    ],
+    "generated_answers": [
+      [
+        120.0
+      ],
+      [
+        1300.0
+      ],
+      [
+        40.0
+      ],
+      [
+        60.0
+      ],
+      [
+        80.0
+      ],
+      [
+        220.0
+      ],
+      [
+        800.0
+      ],
+      [
+        410.0
+      ]
+    ],
+    "table_id": "1-1007688-1"
+  },
+  {
+    "type": "numerical_expansion",
+    "original_question": "What are all the typhus number when smallpox is 4",
+    "generated_question": "What are all the typhus number when smallpox is 4",
+    "original_sql": "SELECT col1 FROM table_1_1007688_1 WHERE col4 = 4;",
+    "generated_sql": "SELECT col1 FROM table_1_1007688_1 WHERE col4 NOT BETWEEN 3 AND 4;",
+    "original_answers": [
+      [
+        120.0
+      ]
+    ],
+    "generated_answers": [
+      [
+        120.0
+      ],
+      [
+        1300.0
+      ],
+      [
+        40.0
+      ],
+      [
+        60.0
+      ],
+      [
+        80.0
+      ],
+      [
+        220.0
+      ],
+      [
+        800.0
+      ],
+      [
+        410.0
+      ]
+    ],
+    "table_id": "1-1007688-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "what is the number of smallpox when typhoid fever is 293",
+    "generated_question": "what is not the number of smallpox when typhoid fever is 293",
+    "original_sql": "SELECT MAX(col4) FROM table_1_1007688_1 WHERE col2 = 293;",
+    "generated_sql": "SELECT MAX(col4) FROM table_1_1007688_1 WHERE col2 != 293;",
+    "original_answers": [
+      [
+        106.0
+      ]
+    ],
+    "generated_answers": [
+      [
+        80.0
+      ]
+    ],
+    "table_id": "1-1007688-1"
+  },
+  {
+    "type": "numerical_expansion",
+    "original_question": "what is the number of smallpox when typhoid fever is 293",
+    "generated_question": "what is the number of smallpox when typhoid fever is 293",
+    "original_sql": "SELECT MAX(col4) FROM table_1_1007688_1 WHERE col2 = 293;",
+    "generated_sql": "SELECT MAX(col4) FROM table_1_1007688_1 WHERE col2 NOT BETWEEN 234 AND 351;",
+    "original_answers": [
+      [
+        106.0
+      ]
+    ],
+    "generated_answers": [
+      [
+        67.0
+      ]
+    ],
+    "table_id": "1-1007688-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "what is the typhoid fever number for the year 1929",
+    "generated_question": "what is not the typhoid fever number for the year 1929",
+    "original_sql": "SELECT col2 FROM table_1_1007688_1 WHERE col0 = '1929';",
+    "generated_sql": "SELECT col2 FROM table_1_1007688_1 WHERE col0 != '1929';",
+    "original_answers": [
+      [
+        170.0
+      ]
+    ],
+    "generated_answers": [
+      [
+        424.0
+      ],
+      [
+        293.0
+      ],
+      [
+        190.0
+      ],
+      [
+        260.0
+      ],
+      [
+        300.0
+      ],
+      [
+        210.0
+      ],
+      [
+        200.0
+      ],
+      [
+        140.0
+      ]
+    ],
+    "table_id": "1-1007688-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "How many schools are in Bloomington, IN?",
+    "generated_question": "How many schools are not in Bloomington, IN?",
+    "original_sql": "SELECT COUNT(col2) FROM table_1_10082596_1 WHERE col1 = 'Bloomington, IN';",
+    "generated_sql": "SELECT COUNT(col2) FROM table_1_10082596_1 WHERE col1 != 'Bloomington, IN';",
+    "original_answers": [
+      [
+        0
+      ]
+    ],
+    "generated_answers": [
+      [
+        5
+      ]
+    ],
+    "table_id": "1-10082596-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "How many of the schools are designated private/Presbyterian?",
+    "generated_question": "How many of the schools are not designated private / Presbyterian?",
+    "original_sql": "SELECT COUNT(col1) FROM table_1_10082596_1 WHERE col3 = 'Private/Presbyterian';",
+    "generated_sql": "SELECT COUNT(col1) FROM table_1_10082596_1 WHERE col3 != 'Private/Presbyterian';",
+    "original_answers": [
+      [
+        0
+      ]
+    ],
+    "generated_answers": [
+      [
+        5
+      ]
+    ],
+    "table_id": "1-10082596-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "In what year was Lindenwood University founded?",
+    "generated_question": "In what year was not Lindenwood University founded?",
+    "original_sql": "SELECT MIN(col2) FROM table_1_10082596_1 WHERE col0 = 'Lindenwood University';",
+    "generated_sql": "SELECT MIN(col2) FROM table_1_10082596_1 WHERE col0 != 'Lindenwood University';",
+    "original_answers": [
+      [
+        null
+      ]
+    ],
+    "generated_answers": [
+      [
+        1804.0
+      ]
+    ],
+    "table_id": "1-10082596-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "How many of the schools listed are in Ames, IA?",
+    "generated_question": "How many of the schools listed are not in Ames, IA?",
+    "original_sql": "SELECT COUNT(col6) FROM table_1_10082596_1 WHERE col1 = 'Ames, IA';",
+    "generated_sql": "SELECT COUNT(col6) FROM table_1_10082596_1 WHERE col1 != 'Ames, IA';",
+    "original_answers": [
+      [
+        0
+      ]
+    ],
+    "generated_answers": [
+      [
+        5
+      ]
+    ],
+    "table_id": "1-10082596-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "How many countries (endonym) has the capital (endonym) of Jakarta?",
+    "generated_question": "How many countries ( endonym ) has not the capital ( endonym ) of Jakarta?",
+    "original_sql": "SELECT COUNT(col2) FROM table_1_1008653_9 WHERE col3 = 'Jakarta';",
+    "generated_sql": "SELECT COUNT(col2) FROM table_1_1008653_9 WHERE col3 != 'Jakarta';",
+    "original_answers": [
+      [
+        0
+      ]
+    ],
+    "generated_answers": [
+      [
+        6
+      ]
+    ],
+    "table_id": "1-1008653-9"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "The season premiere aired on September 11, 2000 aired on how many networks? ",
+    "generated_question": "The season premiere aired on September 11, 2000 did not air on how many networks?",
+    "original_sql": "SELECT COUNT(col1) FROM table_1_1009087_1 WHERE col2 = 'September 11, 2000';",
+    "generated_sql": "SELECT COUNT(col1) FROM table_1_1009087_1 WHERE col2 != 'September 11, 2000';",
+    "original_answers": [
+      [
+        0
+      ]
+    ],
+    "generated_answers": [
+      [
+        7
+      ]
+    ],
+    "table_id": "1-1009087-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "what is the minimum population canada 2011 census with seat of rcm being cowansville",
+    "generated_question": "what is not the minimum   population canada 2011 census   with   seat of rcm   being cowansville",
+    "original_sql": "SELECT MIN(col1) FROM table_1_1011906_1 WHERE col4 = 'Cowansville';",
+    "generated_sql": "SELECT MIN(col1) FROM table_1_1011906_1 WHERE col4 != 'Cowansville';",
+    "original_answers": [
+      [
+        null
+      ]
+    ],
+    "generated_answers": [
+      [
+        15381.0
+      ]
+    ],
+    "table_id": "1-1011906-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "How many County Kerry have 53% Irish speakers?",
+    "generated_question": "How many County Kerry have not 53 % Irish speakers?",
+    "original_sql": "SELECT COUNT(col1) FROM table_1_101196_1 WHERE col4 = '53%' AND col0 = 'County Kerry';",
+    "generated_sql": "SELECT COUNT(col1) FROM table_1_101196_1 WHERE col4 != '53%' AND col0 != 'County Kerry';",
+    "original_answers": [
+      [
+        0
+      ]
+    ],
+    "generated_answers": [
+      [
+        45
+      ]
+    ],
+    "table_id": "1-101196-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "What is the the Chinese population for the state that has a Filipino population of 1474707?",
+    "generated_question": "What is not the the Chinese population for the state that has a Filipino population of 1474707?",
+    "original_sql": "SELECT MIN(col2) FROM table_1_10118412_6 WHERE col3 = 1474707;",
+    "generated_sql": "SELECT MIN(col2) FROM table_1_10118412_6 WHERE col3 != 1474707;",
+    "original_answers": [
+      [
+        1451537.0
+      ]
+    ],
+    "generated_answers": [
+      [
+        1340.0
+      ]
+    ],
+    "table_id": "1-10118412-6"
+  },
+  {
+    "type": "numerical_expansion",
+    "original_question": "What is the the Chinese population for the state that has a Filipino population of 1474707?",
+    "generated_question": "What is the the Chinese population for the state that has a Filipino population of 1474707?",
+    "original_sql": "SELECT MIN(col2) FROM table_1_10118412_6 WHERE col3 = 1474707;",
+    "generated_sql": "SELECT MIN(col2) FROM table_1_10118412_6 WHERE col3 NOT BETWEEN 1179765 AND 1769648;",
+    "original_answers": [
+      [
+        1451537.0
+      ]
+    ],
+    "generated_answers": [
+      [
+        1340.0
+      ]
+    ],
+    "table_id": "1-10118412-6"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "How many States have an Indian population of 30947?",
+    "generated_question": "How many States have not an Indian population of 30947?",
+    "original_sql": "SELECT COUNT(col3) FROM table_1_10118412_6 WHERE col4 = 30947;",
+    "generated_sql": "SELECT COUNT(col3) FROM table_1_10118412_6 WHERE col4 != 30947;",
+    "original_answers": [
+      [
+        1
+      ]
+    ],
+    "generated_answers": [
+      [
+        51
+      ]
+    ],
+    "table_id": "1-10118412-6"
+  },
+  {
+    "type": "numerical_expansion",
+    "original_question": "How many States have an Indian population of 30947?",
+    "generated_question": "How many States have an Indian population of 30947?",
+    "original_sql": "SELECT COUNT(col3) FROM table_1_10118412_6 WHERE col4 = 30947;",
+    "generated_sql": "SELECT COUNT(col3) FROM table_1_10118412_6 WHERE col4 NOT BETWEEN 24757 AND 37136;",
+    "original_answers": [
+      [
+        1
+      ]
+    ],
+    "generated_answers": [
+      [
+        48
+      ]
+    ],
+    "table_id": "1-10118412-6"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "How many Australians were in the UN commission on Korea?",
+    "generated_question": "How many Australians were not in the UN commission on Korea?",
+    "original_sql": "SELECT COUNT(col4) FROM table_1_10121127_1 WHERE col1 = 'UN Commission on Korea';",
+    "generated_sql": "SELECT COUNT(col4) FROM table_1_10121127_1 WHERE col1 != 'UN Commission on Korea';",
+    "original_answers": [
+      [
+        0
+      ]
+    ],
+    "generated_answers": [
+      [
+        23
+      ]
+    ],
+    "table_id": "1-10121127-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "What is the number of season premieres were 10.17 people watched?",
+    "generated_question": "What is not the number of season premieres were 10.17 people watched?",
+    "original_sql": "SELECT COUNT(col2) FROM table_1_10120207_8 WHERE col6 = '10.17';",
+    "generated_sql": "SELECT COUNT(col2) FROM table_1_10120207_8 WHERE col6 != '10.17';",
+    "original_answers": [
+      [
+        1
+      ]
+    ],
+    "generated_answers": [
+      [
+        21
+      ]
+    ],
+    "table_id": "1-10120207-8"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "How many wins happened in 1983?",
+    "generated_question": "How many wins did not happen in 1983?",
+    "original_sql": "SELECT MIN(col2) FROM table_1_1012730_1 WHERE col0 = 1983;",
+    "generated_sql": "SELECT MIN(col2) FROM table_1_1012730_1 WHERE col0 != 1983;",
+    "original_answers": [
+      [
+        1.0
+      ]
+    ],
+    "generated_answers": [
+      [
+        0.0
+      ]
+    ],
+    "table_id": "1-1012730-1"
+  },
+  {
+    "type": "numerical_expansion",
+    "original_question": "How many wins happened in 1983?",
+    "generated_question": "How many wins happened in 1983?",
+    "original_sql": "SELECT MIN(col2) FROM table_1_1012730_1 WHERE col0 = 1983;",
+    "generated_sql": "SELECT MIN(col2) FROM table_1_1012730_1 WHERE col0 NOT BETWEEN 1586 AND 2379;",
+    "original_answers": [
+      [
+        1.0
+      ]
+    ],
+    "generated_answers": [
+      [
+        null
+      ]
+    ],
+    "table_id": "1-1012730-1"
+  },
+  {
+    "type": "temporal_expansion",
+    "original_question": "How many wins happened in 1983?",
+    "generated_question": "How many wins happened not between 1978 and 1988?",
+    "original_sql": "SELECT MIN(col2) FROM table_1_1012730_1 WHERE col0 = 1983;",
+    "generated_sql": "SELECT MIN(col2) FROM table_1_1012730_1 WHERE col0 NOT BETWEEN 1978 AND 1988;",
+    "original_answers": [
+      [
+        1.0
+      ]
+    ],
+    "generated_answers": [
+      [
+        0.0
+      ]
+    ],
+    "table_id": "1-1012730-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "How many top tens had an average start of 29.4?",
+    "generated_question": "How many top tens had not an average start of 29.4?",
+    "original_sql": "SELECT COUNT(col4) FROM table_1_1012730_1 WHERE col6 = '29.4';",
+    "generated_sql": "SELECT COUNT(col4) FROM table_1_1012730_1 WHERE col6 != '29.4';",
+    "original_answers": [
+      [
+        1
+      ]
+    ],
+    "generated_answers": [
+      [
+        34
+      ]
+    ],
+    "table_id": "1-1012730-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "How many poles had an average finish of 19.1?",
+    "generated_question": "How many poles had not an average finish of 19.1?",
+    "original_sql": "SELECT MAX(col5) FROM table_1_1012730_1 WHERE col7 = '19.1';",
+    "generated_sql": "SELECT MAX(col5) FROM table_1_1012730_1 WHERE col7 != '19.1';",
+    "original_answers": [
+      [
+        1.0
+      ]
+    ],
+    "generated_answers": [
+      [
+        4.0
+      ]
+    ],
+    "table_id": "1-1012730-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "How many starts did Hendrick motorsports have?",
+    "generated_question": "How many starts did not Hendrick motorsports have?",
+    "original_sql": "SELECT MIN(col1) FROM table_1_1012730_1 WHERE col10 = 'Hendrick Motorsports';",
+    "generated_sql": "SELECT MIN(col1) FROM table_1_1012730_1 WHERE col10 != 'Hendrick Motorsports';",
+    "original_answers": [
+      [
+        null
+      ]
+    ],
+    "generated_answers": [
+      [
+        2.0
+      ]
+    ],
+    "table_id": "1-1012730-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "How many votes did Southern England cast whilst Northern Ireland cast 3?",
+    "generated_question": "How many votes did not Southern England cast whilst Northern Ireland cast 3?",
+    "original_sql": "SELECT col5 FROM table_1_10128185_2 WHERE col2 = 3;",
+    "generated_sql": "SELECT col5 FROM table_1_10128185_2 WHERE col2 != 3;",
+    "original_answers": [
+      [
+        2.0
+      ]
+    ],
+    "generated_answers": [
+      [
+        3.0
+      ],
+      [
+        4.0
+      ],
+      [
+        5.0
+      ],
+      [
+        8.0
+      ],
+      [
+        6.0
+      ],
+      [
+        1.0
+      ]
+    ],
+    "table_id": "1-10128185-2"
+  },
+  {
+    "type": "numerical_expansion",
+    "original_question": "How many votes did Southern England cast whilst Northern Ireland cast 3?",
+    "generated_question": "How many votes did Southern England cast whilst Northern Ireland cast 3?",
+    "original_sql": "SELECT col5 FROM table_1_10128185_2 WHERE col2 = 3;",
+    "generated_sql": "SELECT col5 FROM table_1_10128185_2 WHERE col2 NOT BETWEEN 2 AND 3;",
+    "original_answers": [
+      [
+        2.0
+      ]
+    ],
+    "generated_answers": [
+      [
+        3.0
+      ],
+      [
+        4.0
+      ],
+      [
+        5.0
+      ],
+      [
+        8.0
+      ],
+      [
+        1.0
+      ]
+    ],
+    "table_id": "1-10128185-2"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "What is the total number of votes if Scotland cast 35?",
+    "generated_question": "What is not the total number of votes if Scotland cast 35?",
+    "original_sql": "SELECT COUNT(col4) FROM table_1_10128185_2 WHERE col7 = 35;",
+    "generated_sql": "SELECT COUNT(col4) FROM table_1_10128185_2 WHERE col7 != 35;",
+    "original_answers": [
+      [
+        1
+      ]
+    ],
+    "generated_answers": [
+      [
+        6
+      ]
+    ],
+    "table_id": "1-10128185-2"
+  },
+  {
+    "type": "numerical_expansion",
+    "original_question": "What is the total number of votes if Scotland cast 35?",
+    "generated_question": "What is the total number of votes if Scotland cast 35?",
+    "original_sql": "SELECT COUNT(col4) FROM table_1_10128185_2 WHERE col7 = 35;",
+    "generated_sql": "SELECT COUNT(col4) FROM table_1_10128185_2 WHERE col7 NOT BETWEEN 28 AND 42;",
+    "original_answers": [
+      [
+        1
+      ]
+    ],
+    "generated_answers": [
+      [
+        5
+      ]
+    ],
+    "table_id": "1-10128185-2"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "How many votes did Northern Ireland cast if the total was 35?",
+    "generated_question": "How many votes did not Northern Ireland cast if the total was 35?",
+    "original_sql": "SELECT col2 FROM table_1_10128185_2 WHERE col7 = 35;",
+    "generated_sql": "SELECT col2 FROM table_1_10128185_2 WHERE col7 != 35;",
+    "original_answers": [
+      [
+        5.0
+      ]
+    ],
+    "generated_answers": [
+      [
+        3.0
+      ],
+      [
+        1.0
+      ],
+      [
+        6.0
+      ],
+      [
+        8.0
+      ],
+      [
+        2.0
+      ],
+      [
+        4.0
+      ]
+    ],
+    "table_id": "1-10128185-2"
+  },
+  {
+    "type": "numerical_expansion",
+    "original_question": "How many votes did Northern Ireland cast if the total was 35?",
+    "generated_question": "How many votes did Northern Ireland cast if the total was 35?",
+    "original_sql": "SELECT col2 FROM table_1_10128185_2 WHERE col7 = 35;",
+    "generated_sql": "SELECT col2 FROM table_1_10128185_2 WHERE col7 NOT BETWEEN 28 AND 42;",
+    "original_answers": [
+      [
+        5.0
+      ]
+    ],
+    "generated_answers": [
+      [
+        3.0
+      ],
+      [
+        1.0
+      ],
+      [
+        8.0
+      ],
+      [
+        2.0
+      ],
+      [
+        4.0
+      ]
+    ],
+    "table_id": "1-10128185-2"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "How many votes did Wales cast when Northern England cast 6?",
+    "generated_question": "How many votes did not Wales cast when Northern England cast 6?",
+    "original_sql": "SELECT MIN(col6) FROM table_1_10128185_2 WHERE col3 = 6;",
+    "generated_sql": "SELECT MIN(col6) FROM table_1_10128185_2 WHERE col3 != 6;",
+    "original_answers": [
+      [
+        6.0
+      ]
+    ],
+    "generated_answers": [
+      [
+        1.0
+      ]
+    ],
+    "table_id": "1-10128185-2"
+  },
+  {
+    "type": "numerical_expansion",
+    "original_question": "How many votes did Wales cast when Northern England cast 6?",
+    "generated_question": "How many votes did Wales cast when Northern England cast 6?",
+    "original_sql": "SELECT MIN(col6) FROM table_1_10128185_2 WHERE col3 = 6;",
+    "generated_sql": "SELECT MIN(col6) FROM table_1_10128185_2 WHERE col3 NOT BETWEEN 4 AND 7;",
+    "original_answers": [
+      [
+        6.0
+      ]
+    ],
+    "generated_answers": [
+      [
+        1.0
+      ]
+    ],
+    "table_id": "1-10128185-2"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "What teams had 9 in the top 5 and 1 wins?",
+    "generated_question": "What teams had not 9 in the top 5 and 1 wins?",
+    "original_sql": "SELECT col10 FROM table_1_1012730_2 WHERE col3 = 9 AND col2 = 1;",
+    "generated_sql": "SELECT col10 FROM table_1_1012730_2 WHERE col3 != 9 AND col2 != 1;",
+    "original_answers": [
+      [
+        "labonte motorsports"
+      ]
+    ],
+    "generated_answers": [
+      [
+        "labonte motorsports"
+      ],
+      [
+        "labonte motorsports"
+      ],
+      [
+        "labonte motorsports"
+      ],
+      [
+        "labonte motorsports"
+      ],
+      [
+        "labonte motorsports"
+      ]
+    ],
+    "table_id": "1-1012730-2"
+  },
+  {
+    "type": "numerical_expansion",
+    "original_question": "What teams had 9 in the top 5 and 1 wins?",
+    "generated_question": "What teams had 9 in the top 5 and 1 wins?",
+    "original_sql": "SELECT col10 FROM table_1_1012730_2 WHERE col3 = 9 AND col2 = 1;",
+    "generated_sql": "SELECT col10 FROM table_1_1012730_2 WHERE col3 NOT BETWEEN 7 AND 10 AND col3 NOT BETWEEN 7 AND 10;",
+    "original_answers": [
+      [
+        "labonte motorsports"
+      ]
+    ],
+    "generated_answers": [
+      [
+        "darrell waltrip motorsports"
+      ],
+      [
+        "labonte motorsports"
+      ],
+      [
+        "labonte motorsports"
+      ],
+      [
+        "labonte motorsports"
+      ],
+      [
+        "labonte motorsports"
+      ],
+      [
+        "labonte motorsports"
+      ],
+      [
+        "labonte motorsports"
+      ]
+    ],
+    "table_id": "1-1012730-2"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "What is the smallest pick for the player, brett lindros?",
+    "generated_question": "What is not the smallest pick for the player, brett lindros?",
+    "original_sql": "SELECT MIN(col0) FROM table_1_1013129_1 WHERE col1 = 'Brett Lindros';",
+    "generated_sql": "SELECT MIN(col0) FROM table_1_1013129_1 WHERE col1 != 'Brett Lindros';",
+    "original_answers": [
+      [
+        null
+      ]
+    ],
+    "generated_answers": [
+      [
+        1.0
+      ]
+    ],
+    "table_id": "1-1013129-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "What is the number for t c (k) when the notation is tl-2212?",
+    "generated_question": "What is not the number for t c ( k ) when the notation is tl-2212?",
+    "original_sql": "SELECT COUNT(col2) FROM table_1_101336_1 WHERE col1 = 'Tl-2212';",
+    "generated_sql": "SELECT COUNT(col2) FROM table_1_101336_1 WHERE col1 != 'Tl-2212';",
+    "original_answers": [
+      [
+        0
+      ]
+    ],
+    "generated_answers": [
+      [
+        10
+      ]
+    ],
+    "table_id": "1-101336-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "How many 2010 estimations have been done in the city of Cremona?",
+    "generated_question": "How many 2010 estimations have not been done in the city of Cremona?",
+    "original_sql": "SELECT COUNT(col5) FROM table_1_10138926_1 WHERE col1 = 'Cremona';",
+    "generated_sql": "SELECT COUNT(col5) FROM table_1_10138926_1 WHERE col1 != 'Cremona';",
+    "original_answers": [
+      [
+        0
+      ]
+    ],
+    "generated_answers": [
+      [
+        148
+      ]
+    ],
+    "table_id": "1-10138926-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "What's the 2001 census of the region of Abruzzo where the 1871 census is bigger than 51092.0?",
+    "generated_question": "What 's the 2001 census of the region of Abruzzo where the 1871 census is not bigger than 51092.0?",
+    "original_sql": "SELECT MIN(col4) FROM table_1_10138926_1 WHERE col6 = 'Abruzzo' AND col2 > 51092.0;",
+    "generated_sql": "SELECT MIN(col4) FROM table_1_10138926_1 WHERE col6 != 'Abruzzo' AND col2 <= 51092.0;",
+    "original_answers": [
+      [
+        null
+      ]
+    ],
+    "generated_answers": [
+      [
+        36952.0
+      ]
+    ],
+    "table_id": "1-10138926-1"
+  },
+  {
+    "type": "numerical_expansion",
+    "original_question": "What's the 2001 census of the region of Abruzzo where the 1871 census is bigger than 51092.0?",
+    "generated_question": "What's the 2001 census of the region of Abruzzo where the 1871 census is bigger than 51092.0?",
+    "original_sql": "SELECT MIN(col4) FROM table_1_10138926_1 WHERE col6 = 'Abruzzo' AND col2 > 51092.0;",
+    "generated_sql": "SELECT MIN(col4) FROM table_1_10138926_1 WHERE col6 = 'Abruzzo' AND col2 NOT BETWEEN 40873 AND 61310.0;",
+    "original_answers": [
+      [
+        null
+      ]
+    ],
+    "generated_answers": [
+      [
+        null
+      ]
+    ],
+    "table_id": "1-10138926-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "What's the 1991 census of the city of Carpi?",
+    "generated_question": "not What's the 1991 census of the city of Carpi?",
+    "original_sql": "SELECT MAX(col3) FROM table_1_10138926_1 WHERE col1 = 'Carpi';",
+    "generated_sql": "SELECT MAX(col3) FROM table_1_10138926_1 WHERE col1 != 'Carpi';",
+    "original_answers": [
+      [
+        null
+      ]
+    ],
+    "generated_answers": [
+      [
+        2775250.0
+      ]
+    ],
+    "table_id": "1-10138926-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "How many 2001 censuses are there on number 13?",
+    "generated_question": "How many 2001 censuses are not there on number 13?",
+    "original_sql": "SELECT COUNT(col4) FROM table_1_10138926_1 WHERE col0 = 13;",
+    "generated_sql": "SELECT COUNT(col4) FROM table_1_10138926_1 WHERE col0 != 13;",
+    "original_answers": [
+      [
+        1
+      ]
+    ],
+    "generated_answers": [
+      [
+        147
+      ]
+    ],
+    "table_id": "1-10138926-1"
+  },
+  {
+    "type": "numerical_expansion",
+    "original_question": "How many 2001 censuses are there on number 13?",
+    "generated_question": "How many 2001 censuses are there on number 13?",
+    "original_sql": "SELECT COUNT(col4) FROM table_1_10138926_1 WHERE col0 = 13;",
+    "generated_sql": "SELECT COUNT(col4) FROM table_1_10138926_1 WHERE col0 NOT BETWEEN 10 AND 15;",
+    "original_answers": [
+      [
+        1
+      ]
+    ],
+    "generated_answers": [
+      [
+        142
+      ]
+    ],
+    "table_id": "1-10138926-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "How many nationalities are the pick 193?",
+    "generated_question": "How many nationalities are not the pick 193?",
+    "original_sql": "SELECT COUNT(col3) FROM table_1_1013129_8 WHERE col0 = 193;",
+    "generated_sql": "SELECT COUNT(col3) FROM table_1_1013129_8 WHERE col0 != 193;",
+    "original_answers": [
+      [
+        1
+      ]
+    ],
+    "generated_answers": [
+      [
+        25
+      ]
+    ],
+    "table_id": "1-1013129-8"
+  },
+  {
+    "type": "numerical_expansion",
+    "original_question": "How many nationalities are the pick 193?",
+    "generated_question": "How many nationalities are the pick 193?",
+    "original_sql": "SELECT COUNT(col3) FROM table_1_1013129_8 WHERE col0 = 193;",
+    "generated_sql": "SELECT COUNT(col3) FROM table_1_1013129_8 WHERE col0 NOT BETWEEN 154 AND 231;",
+    "original_answers": [
+      [
+        1
+      ]
+    ],
+    "generated_answers": [
+      [
+        0
+      ]
+    ],
+    "table_id": "1-1013129-8"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "How many songs received a 10 from Goodman and were rated by Tonioli?",
+    "generated_question": "How many songs received a 10 from Goodman and were not rated by Tonioli?",
+    "original_sql": "SELECT COUNT(col5) FROM table_1_1014319_1 WHERE col3 = '10';",
+    "generated_sql": "SELECT COUNT(col5) FROM table_1_1014319_1 WHERE col3 != '10';",
+    "original_answers": [
+      [
+        1
+      ]
+    ],
+    "generated_answers": [
+      [
+        14
+      ]
+    ],
+    "table_id": "1-1014319-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "How many scores did Goodman give to \"samba / young hearts run free\", which was in second place?",
+    "generated_question": "How many scores did not Goodman give to \" samba / young hearts run free \", which was in second place?",
+    "original_sql": "SELECT COUNT(col3) FROM table_1_1014319_1 WHERE col7 = 'Second place' AND col1 = 'Samba / Young Hearts Run Free';",
+    "generated_sql": "SELECT COUNT(col3) FROM table_1_1014319_1 WHERE col7 != 'Second place' AND col1 != 'Samba / Young Hearts Run Free';",
+    "original_answers": [
+      [
+        0
+      ]
+    ],
+    "generated_answers": [
+      [
+        15
+      ]
+    ],
+    "table_id": "1-1014319-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "What is we two when the case/suffix is loc.?",
+    "generated_question": "What is not we two when the case / suffix is loc.?",
+    "original_sql": "SELECT col1 FROM table_1_1015914_24 WHERE col0 = 'loc.';",
+    "generated_sql": "SELECT col1 FROM table_1_1015914_24 WHERE col0 != 'loc.';",
+    "original_answers": [
+      [
+        "ngalbeniya"
+      ]
+    ],
+    "generated_answers": [
+      [
+        "ngalbe"
+      ],
+      [
+        "ngalben"
+      ],
+      [
+        "ngalbelpa"
+      ],
+      [
+        "ngalbelngu"
+      ]
+    ],
+    "table_id": "1-1015914-24"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "What is them two (the two) when we two is ngalbelpa?",
+    "generated_question": "What is not them two ( the two ) when we two is ngalbelpa?",
+    "original_sql": "SELECT col4 FROM table_1_1015914_24 WHERE col1 = 'ngalbelpa';",
+    "generated_sql": "SELECT col4 FROM table_1_1015914_24 WHERE col1 != 'ngalbelpa';",
+    "original_answers": [
+      [
+        "palamulpa (boigu palemulpa)"
+      ]
+    ],
+    "generated_answers": [
+      [
+        "palai (boigu pale)"
+      ],
+      [
+        "palamun (boigu palemun)"
+      ],
+      [
+        "palamulngu (boigu palemulngu)"
+      ],
+      [
+        "palamuniya (boigu palemuniya)"
+      ]
+    ],
+    "table_id": "1-1015914-24"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "What is them two (the two) when you and i is ngœbalngu?",
+    "generated_question": "What is not them two ( the two ) when you and i is ngœbalngu?",
+    "original_sql": "SELECT col4 FROM table_1_1015914_24 WHERE col2 = 'ngœbalngu';",
+    "generated_sql": "SELECT col4 FROM table_1_1015914_24 WHERE col2 != 'ngœbalngu';",
+    "original_answers": [
+      [
+        "palamulngu (boigu palemulngu)"
+      ]
+    ],
+    "generated_answers": [
+      [
+        "palai (boigu pale)"
+      ],
+      [
+        "palamun (boigu palemun)"
+      ],
+      [
+        "palamulpa (boigu palemulpa)"
+      ],
+      [
+        "palamuniya (boigu palemuniya)"
+      ]
+    ],
+    "table_id": "1-1015914-24"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "What is who-two where you and i is ngœban?",
+    "generated_question": "What is not who - two where you and i is ngœban?",
+    "original_sql": "SELECT col5 FROM table_1_1015914_24 WHERE col2 = 'ngœban';",
+    "generated_sql": "SELECT col5 FROM table_1_1015914_24 WHERE col2 != 'ngœban';",
+    "original_answers": [
+      [
+        "(as for singular)"
+      ]
+    ],
+    "generated_answers": [
+      [
+        "ngawal"
+      ],
+      [
+        "(as for singular)"
+      ],
+      [
+        "(as for singular)"
+      ],
+      [
+        "(as for singular)"
+      ]
+    ],
+    "table_id": "1-1015914-24"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "What is we two where you two is ngipen?",
+    "generated_question": "What is not we two where you two is ngipen?",
+    "original_sql": "SELECT col1 FROM table_1_1015914_24 WHERE col3 = 'ngipen';",
+    "generated_sql": "SELECT col1 FROM table_1_1015914_24 WHERE col3 != 'ngipen';",
+    "original_answers": [
+      [
+        "ngalben"
+      ]
+    ],
+    "generated_answers": [
+      [
+        "ngalbe"
+      ],
+      [
+        "ngalbelpa"
+      ],
+      [
+        "ngalbelngu"
+      ],
+      [
+        "ngalbeniya"
+      ]
+    ],
+    "table_id": "1-1015914-24"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "What is who-two when you two is ngipelngu?",
+    "generated_question": "What is not who - two when you two is ngipelngu?",
+    "original_sql": "SELECT col5 FROM table_1_1015914_24 WHERE col3 = 'ngipelngu';",
+    "generated_sql": "SELECT col5 FROM table_1_1015914_24 WHERE col3 != 'ngipelngu';",
+    "original_answers": [
+      [
+        "(as for singular)"
+      ]
+    ],
+    "generated_answers": [
+      [
+        "ngawal"
+      ],
+      [
+        "(as for singular)"
+      ],
+      [
+        "(as for singular)"
+      ],
+      [
+        "(as for singular)"
+      ]
+    ],
+    "table_id": "1-1015914-24"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "what's the total number of position with driver  robby gordon",
+    "generated_question": "not what's the total number of position with driver  robby gordon",
+    "original_sql": "SELECT COUNT(col0) FROM table_1_10160447_1 WHERE col1 = 'Robby Gordon';",
+    "generated_sql": "SELECT COUNT(col0) FROM table_1_10160447_1 WHERE col1 != 'Robby Gordon';",
+    "original_answers": [
+      [
+        0
+      ]
+    ],
+    "generated_answers": [
+      [
+        11
+      ]
+    ],
+    "table_id": "1-10160447-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "what's the maximum position with winnings  $50,000",
+    "generated_question": "not what's the maximum position with winnings  $50,000",
+    "original_sql": "SELECT MAX(col0) FROM table_1_10160447_1 WHERE col3 = '$50,000';",
+    "generated_sql": "SELECT MAX(col0) FROM table_1_10160447_1 WHERE col3 != '$50,000';",
+    "original_answers": [
+      [
+        4.0
+      ]
+    ],
+    "generated_answers": [
+      [
+        11.0
+      ]
+    ],
+    "table_id": "1-10160447-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "What was the number of nominations for natalia raskokoha?",
+    "generated_question": "What was not the number of nominations for natalia raskokoha?",
+    "original_sql": "SELECT COUNT(col0) FROM table_1_10236830_1 WHERE col1 = 'Natalia Raskokoha';",
+    "generated_sql": "SELECT COUNT(col0) FROM table_1_10236830_1 WHERE col1 != 'Natalia Raskokoha';",
+    "original_answers": [
+      [
+        0
+      ]
+    ],
+    "generated_answers": [
+      [
+        9
+      ]
+    ],
+    "table_id": "1-10236830-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "When FA Cup Apps is 9 what is the smallest number of FA Cup Goals?",
+    "generated_question": "When FA Cup Apps is not 9 what is the smallest number of FA Cup Goals?",
+    "original_sql": "SELECT MIN(col5) FROM table_1_10240125_1 WHERE col4 = 9;",
+    "generated_sql": "SELECT MIN(col5) FROM table_1_10240125_1 WHERE col4 != 9;",
+    "original_answers": [
+      [
+        1.0
+      ]
+    ],
+    "generated_answers": [
+      [
+        0.0
+      ]
+    ],
+    "table_id": "1-10240125-1"
+  },
+  {
+    "type": "numerical_expansion",
+    "original_question": "When FA Cup Apps is 9 what is the smallest number of FA Cup Goals?",
+    "generated_question": "When FA Cup Apps is 9 what is the smallest number of FA Cup Goals?",
+    "original_sql": "SELECT MIN(col5) FROM table_1_10240125_1 WHERE col4 = 9;",
+    "generated_sql": "SELECT MIN(col5) FROM table_1_10240125_1 WHERE col4 NOT BETWEEN 7 AND 10;",
+    "original_answers": [
+      [
+        1.0
+      ]
+    ],
+    "generated_answers": [
+      [
+        0.0
+      ]
+    ],
+    "table_id": "1-10240125-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "what is the minimum production code with title \"foreign exchange problem / turn about\"",
+    "generated_question": "what is not the minimum production code with title \" foreign exchange problem / turn about \"",
+    "original_sql": "SELECT MIN(col1) FROM table_1_10269427_3 WHERE col2 = '\"Foreign Exchange Problem / Turn About\"';",
+    "generated_sql": "SELECT MIN(col1) FROM table_1_10269427_3 WHERE col2 != '\"Foreign Exchange Problem / Turn About\"';",
+    "original_answers": [
+      [
+        null
+      ]
+    ],
+    "generated_answers": [
+      [
+        201.0
+      ]
+    ],
+    "table_id": "1-10269427-3"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "HOW MANY TEMPERATURE INTERVALS ARE POSSIBLE TO USE WITH ACRYL? ",
+    "generated_question": "HOW MANY TEMPERATURE INTERVALS ARE not POSSIBLE TO USE WITH ACRYL?",
+    "original_sql": "SELECT COUNT(col3) FROM table_1_10262329_1 WHERE col1 = 'Acryl';",
+    "generated_sql": "SELECT COUNT(col3) FROM table_1_10262329_1 WHERE col1 != 'Acryl';",
+    "original_answers": [
+      [
+        0
+      ]
+    ],
+    "generated_answers": [
+      [
+        6
+      ]
+    ],
+    "table_id": "1-10262329-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "How many matches where played with Jim Pugh?",
+    "generated_question": "not How many matches where played with Jim Pugh?",
+    "original_sql": "SELECT COUNT(col5) FROM table_1_1028356_3 WHERE col4 = 'Jim Pugh';",
+    "generated_sql": "SELECT COUNT(col5) FROM table_1_1028356_3 WHERE col4 != 'Jim Pugh';",
+    "original_answers": [
+      [
+        0
+      ]
+    ],
+    "generated_answers": [
+      [
+        5
+      ]
+    ],
+    "table_id": "1-1028356-3"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "How many matched scored 3–6, 7–6(5), 6–3?",
+    "generated_question": "How many matched did not score 3–6, 7–6(5 ), 6–3?",
+    "original_sql": "SELECT COUNT(col3) FROM table_1_1028356_3 WHERE col6 = '3–6, 7–6(5), 6–3';",
+    "generated_sql": "SELECT COUNT(col3) FROM table_1_1028356_3 WHERE col6 != '3–6, 7–6(5), 6–3';",
+    "original_answers": [
+      [
+        1
+      ]
+    ],
+    "generated_answers": [
+      [
+        4
+      ]
+    ],
+    "table_id": "1-1028356-3"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "How many birthdays does Earl Hanley Beshlin have?",
+    "generated_question": "How many birthdays does not Earl Hanley Beshlin have?",
+    "original_sql": "SELECT COUNT(col3) FROM table_1_10284385_1 WHERE col2 = 'Earl Hanley Beshlin';",
+    "generated_sql": "SELECT COUNT(col3) FROM table_1_10284385_1 WHERE col2 != 'Earl Hanley Beshlin';",
+    "original_answers": [
+      [
+        0
+      ]
+    ],
+    "generated_answers": [
+      [
+        88
+      ]
+    ],
+    "table_id": "1-10284385-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "How many playerd Mrs. Darling in the 1999 Broadway?",
+    "generated_question": "not How many playerd Mrs. Darling in the 1999 Broadway?",
+    "original_sql": "SELECT COUNT(col8) FROM table_1_10312547_1 WHERE col0 = 'Mrs. Darling';",
+    "generated_sql": "SELECT COUNT(col8) FROM table_1_10312547_1 WHERE col0 != 'Mrs. Darling';",
+    "original_answers": [
+      [
+        0
+      ]
+    ],
+    "generated_answers": [
+      [
+        7
+      ]
+    ],
+    "table_id": "1-10312547-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "What date was BBC One total viewing greater then 11616996.338225884?",
+    "generated_question": "What date was not BBC One total viewing greater then 11616996.338225884?",
+    "original_sql": "SELECT col1 FROM table_1_103084_4 WHERE col2 > 11616996.338225884;",
+    "generated_sql": "SELECT col1 FROM table_1_103084_4 WHERE col2 <= 11616996.338225884;",
+    "original_answers": [
+      [
+        "14 march"
+      ]
+    ],
+    "generated_answers": [
+      [
+        "12 march"
+      ],
+      [
+        "16 march"
+      ],
+      [
+        "11 march"
+      ],
+      [
+        "16 march"
+      ],
+      [
+        "13 march"
+      ],
+      [
+        "18 march"
+      ],
+      [
+        "15 march"
+      ]
+    ],
+    "table_id": "1-103084-4"
+  },
+  {
+    "type": "numerical_expansion",
+    "original_question": "What date was BBC One total viewing greater then 11616996.338225884?",
+    "generated_question": "What date was BBC One total viewing greater then 11616996.338225884?",
+    "original_sql": "SELECT col1 FROM table_1_103084_4 WHERE col2 > 11616996.338225884;",
+    "generated_sql": "SELECT col1 FROM table_1_103084_4 WHERE col2 NOT BETWEEN 9293596 AND 13940395.338225884;",
+    "original_answers": [
+      [
+        "14 march"
+      ]
+    ],
+    "generated_answers": [
+      [
+        "12 march"
+      ],
+      [
+        "16 march"
+      ]
+    ],
+    "table_id": "1-103084-4"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "How many years did BBC One rank 20th?",
+    "generated_question": "How many years did not BBC One rank 20th?",
+    "original_sql": "SELECT COUNT(col0) FROM table_1_103084_4 WHERE col3 = '20th';",
+    "generated_sql": "SELECT COUNT(col0) FROM table_1_103084_4 WHERE col3 != '20th';",
+    "original_answers": [
+      [
+        1
+      ]
+    ],
+    "generated_answers": [
+      [
+        7
+      ]
+    ],
+    "table_id": "1-103084-4"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "What year was the BBC two total viewing 7,530,000?",
+    "generated_question": "What year was not the BBC two total viewing 7,530,000?",
+    "original_sql": "SELECT MIN(col0) FROM table_1_103084_4 WHERE col4 = '7,530,000';",
+    "generated_sql": "SELECT MIN(col0) FROM table_1_103084_4 WHERE col4 != '7,530,000';",
+    "original_answers": [
+      [
+        2011.0
+      ]
+    ],
+    "generated_answers": [
+      [
+        1999.0
+      ]
+    ],
+    "table_id": "1-103084-4"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": " how many ↓ function / genus → with escherichia being espd",
+    "generated_question": "not  how many ↓ function / genus → with escherichia being espd",
+    "original_sql": "SELECT COUNT(col0) FROM table_1_10321124_1 WHERE col4 = 'EspD';",
+    "generated_sql": "SELECT COUNT(col0) FROM table_1_10321124_1 WHERE col4 != 'EspD';",
+    "original_answers": [
+      [
+        0
+      ]
+    ],
+    "generated_answers": [
+      [
+        9
+      ]
+    ],
+    "table_id": "1-10321124-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "How many original titles did Marriage Italian-Style have? ",
+    "generated_question": "How many original titles did not Marriage Italian - Style have?",
+    "original_sql": "SELECT COUNT(col2) FROM table_1_10321805_1 WHERE col1 = 'Marriage Italian-Style';",
+    "generated_sql": "SELECT COUNT(col2) FROM table_1_10321805_1 WHERE col1 != 'Marriage Italian-Style';",
+    "original_answers": [
+      [
+        0
+      ]
+    ],
+    "generated_answers": [
+      [
+        53
+      ]
+    ],
+    "table_id": "1-10321805-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "what's the camp with estimated deaths of 600,000",
+    "generated_question": "not what's the camp with estimated deaths of 600,000",
+    "original_sql": "SELECT col0 FROM table_1_10335_1 WHERE col1 = '600,000';",
+    "generated_sql": "SELECT col0 FROM table_1_10335_1 WHERE col1 != '600,000';",
+    "original_answers": [
+      [
+        "bełżec"
+      ]
+    ],
+    "generated_answers": [
+      [
+        "auschwitz–birkenau"
+      ],
+      [
+        "majdanek"
+      ],
+      [
+        "maly trostinets"
+      ],
+      [
+        "sajmište"
+      ],
+      [
+        "sobibor"
+      ],
+      [
+        "treblinka"
+      ]
+    ],
+    "table_id": "1-10335-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "what's the occupied territory with estimated deaths of 600,000",
+    "generated_question": "not what's the occupied territory with estimated deaths of 600,000",
+    "original_sql": "SELECT col3 FROM table_1_10335_1 WHERE col1 = '600,000';",
+    "generated_sql": "SELECT col3 FROM table_1_10335_1 WHERE col1 != '600,000';",
+    "original_answers": [
+      [
+        "general government district"
+      ]
+    ],
+    "generated_answers": [
+      [
+        "poland"
+      ],
+      [
+        "general government district"
+      ],
+      [
+        "district of reichskommissariat ostland"
+      ],
+      [
+        "independent state of croatia"
+      ],
+      [
+        "general government district"
+      ],
+      [
+        "general government district"
+      ]
+    ],
+    "table_id": "1-10335-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "Which overall pick number went to college at Youngstown State?",
+    "generated_question": "Which overall pick number did not go to college at Youngstown State?",
+    "original_sql": "SELECT MIN(col2) FROM table_1_10360823_1 WHERE col5 = 'Youngstown State';",
+    "generated_sql": "SELECT MIN(col2) FROM table_1_10360823_1 WHERE col5 != 'Youngstown State';",
+    "original_answers": [
+      [
+        null
+      ]
+    ],
+    "generated_answers": [
+      [
+        3.0
+      ]
+    ],
+    "table_id": "1-10360823-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "The record of 7-3 had the largest attendance of what?",
+    "generated_question": "The record of 7 - 3 had not the largest attendance of what?",
+    "original_sql": "SELECT MAX(col7) FROM table_1_10361453_2 WHERE col6 = '7-3';",
+    "generated_sql": "SELECT MAX(col7) FROM table_1_10361453_2 WHERE col6 != '7-3';",
+    "original_answers": [
+      [
+        47924.0
+      ]
+    ],
+    "generated_answers": [
+      [
+        90266.0
+      ]
+    ],
+    "table_id": "1-10361453-2"
+  },
+  {
+    "type": "numerical_expansion",
+    "original_question": "The game number of 8 had a record of what?",
+    "generated_question": "The game number of 8 had a record of what?",
+    "original_sql": "SELECT col6 FROM table_1_10361453_2 WHERE col0 = 8;",
+    "generated_sql": "SELECT col6 FROM table_1_10361453_2 WHERE col0 NOT BETWEEN 6 AND 9;",
+    "original_answers": [
+      [
+        "6-2"
+      ]
+    ],
+    "generated_answers": [
+      [
+        "1-0"
+      ],
+      [
+        "2-0"
+      ],
+      [
+        "3-0"
+      ],
+      [
+        "4-0"
+      ],
+      [
+        "5-0"
+      ],
+      [
+        "7-3"
+      ],
+      [
+        "7-4"
+      ],
+      [
+        "8-4"
+      ],
+      [
+        "9-4"
+      ]
+    ],
+    "table_id": "1-10361453-2"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "What round was Steve Stonebreaker drafted?",
+    "generated_question": "What round was not Steve Stonebreaker drafted?",
+    "original_sql": "SELECT MAX(col0) FROM table_1_10360656_1 WHERE col3 = 'Steve Stonebreaker';",
+    "generated_sql": "SELECT MAX(col0) FROM table_1_10360656_1 WHERE col3 != 'Steve Stonebreaker';",
+    "original_answers": [
+      [
+        null
+      ]
+    ],
+    "generated_answers": [
+      [
+        19.0
+      ]
+    ],
+    "table_id": "1-10360656-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "What is the greatest round of overall 83?",
+    "generated_question": "What is not the greatest round of overall 83?",
+    "original_sql": "SELECT MAX(col0) FROM table_1_10361625_1 WHERE col2 = 83;",
+    "generated_sql": "SELECT MAX(col0) FROM table_1_10361625_1 WHERE col2 != 83;",
+    "original_answers": [
+      [
+        3.0
+      ]
+    ],
+    "generated_answers": [
+      [
+        11.0
+      ]
+    ],
+    "table_id": "1-10361625-1"
+  },
+  {
+    "type": "numerical_expansion",
+    "original_question": "What is the greatest round of overall 83?",
+    "generated_question": "What is the greatest round of overall 83?",
+    "original_sql": "SELECT MAX(col0) FROM table_1_10361625_1 WHERE col2 = 83;",
+    "generated_sql": "SELECT MAX(col0) FROM table_1_10361625_1 WHERE col2 NOT BETWEEN 66 AND 99;",
+    "original_answers": [
+      [
+        3.0
+      ]
+    ],
+    "generated_answers": [
+      [
+        11.0
+      ]
+    ],
+    "table_id": "1-10361625-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "Where does the defensive back position appear first?",
+    "generated_question": "Where does not the defensive back position appear first?",
+    "original_sql": "SELECT MIN(col0) FROM table_1_10361230_1 WHERE col4 = 'Defensive Back';",
+    "generated_sql": "SELECT MIN(col0) FROM table_1_10361230_1 WHERE col4 != 'Defensive Back';",
+    "original_answers": [
+      [
+        null
+      ]
+    ],
+    "generated_answers": [
+      [
+        1.0
+      ]
+    ],
+    "table_id": "1-10361230-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "What is Bruce Cerone overall?",
+    "generated_question": "What is not Bruce Cerone overall?",
+    "original_sql": "SELECT MIN(col2) FROM table_1_10361230_1 WHERE col3 = 'Bruce Cerone';",
+    "generated_sql": "SELECT MIN(col2) FROM table_1_10361230_1 WHERE col3 != 'Bruce Cerone';",
+    "original_answers": [
+      [
+        null
+      ]
+    ],
+    "generated_answers": [
+      [
+        25.0
+      ]
+    ],
+    "table_id": "1-10361230-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "How many primers annulus colors were there when the color of the bullet tip was white?",
+    "generated_question": "How many primers annulus colors were not there when the color of the bullet tip was white?",
+    "original_sql": "SELECT COUNT(col1) FROM table_1_1036189_1 WHERE col2 = 'White';",
+    "generated_sql": "SELECT COUNT(col1) FROM table_1_1036189_1 WHERE col2 != 'White';",
+    "original_answers": [
+      [
+        0
+      ]
+    ],
+    "generated_answers": [
+      [
+        14
+      ]
+    ],
+    "table_id": "1-1036189-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "How many bullet tips colors had other features of a blue band on case base?",
+    "generated_question": "How many bullet tips colors had not other features of a blue band on case base?",
+    "original_sql": "SELECT COUNT(col2) FROM table_1_1036189_1 WHERE col3 = 'Blue band on case base';",
+    "generated_sql": "SELECT COUNT(col2) FROM table_1_1036189_1 WHERE col3 != 'Blue band on case base';",
+    "original_answers": [
+      [
+        0
+      ]
+    ],
+    "generated_answers": [
+      [
+        14
+      ]
+    ],
+    "table_id": "1-1036189-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "How many touchdowns were scored in the year with a completion percentage of 56.0?",
+    "generated_question": "How many touchdowns were not scored in the year with a completion percentage of 56.0?",
+    "original_sql": "SELECT MIN(col8) FROM table_1_1037590_1 WHERE col5 = '56.0';",
+    "generated_sql": "SELECT MIN(col8) FROM table_1_1037590_1 WHERE col5 != '56.0';",
+    "original_answers": [
+      [
+        19.0
+      ]
+    ],
+    "generated_answers": [
+      [
+        7.0
+      ]
+    ],
+    "table_id": "1-1037590-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "What number of completions are recorded for the year with 12 games started?",
+    "generated_question": "What number of completions are not recorded for the year with 12 games started?",
+    "original_sql": "SELECT col3 FROM table_1_1037590_1 WHERE col2 = 12;",
+    "generated_sql": "SELECT col3 FROM table_1_1037590_1 WHERE col2 != 12;",
+    "original_answers": [
+      [
+        215.0
+      ]
+    ],
+    "generated_answers": [
+      [
+        309.0
+      ],
+      [
+        274.0
+      ],
+      [
+        188.0
+      ],
+      [
+        223.0
+      ],
+      [
+        215.0
+      ]
+    ],
+    "table_id": "1-1037590-1"
+  },
+  {
+    "type": "numerical_expansion",
+    "original_question": "What number of completions are recorded for the year with 12 games started?",
+    "generated_question": "What number of completions are recorded for the year with 12 games started?",
+    "original_sql": "SELECT col3 FROM table_1_1037590_1 WHERE col2 = 12;",
+    "generated_sql": "SELECT col3 FROM table_1_1037590_1 WHERE col2 NOT BETWEEN 9 AND 14;",
+    "original_answers": [
+      [
+        215.0
+      ]
+    ],
+    "generated_answers": [
+      [
+        309.0
+      ],
+      [
+        274.0
+      ]
+    ],
+    "table_id": "1-1037590-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "How many years were there with 348 attempts?",
+    "generated_question": "How many years were not there with 348 attempts?",
+    "original_sql": "SELECT COUNT(col6) FROM table_1_1037590_1 WHERE col4 = 348;",
+    "generated_sql": "SELECT COUNT(col6) FROM table_1_1037590_1 WHERE col4 != 348;",
+    "original_answers": [
+      [
+        1
+      ]
+    ],
+    "generated_answers": [
+      [
+        5
+      ]
+    ],
+    "table_id": "1-1037590-1"
+  },
+  {
+    "type": "numerical_expansion",
+    "original_question": "How many years were there with 348 attempts?",
+    "generated_question": "How many years were there with 348 attempts?",
+    "original_sql": "SELECT COUNT(col6) FROM table_1_1037590_1 WHERE col4 = 348;",
+    "generated_sql": "SELECT COUNT(col6) FROM table_1_1037590_1 WHERE col4 NOT BETWEEN 278 AND 417;",
+    "original_answers": [
+      [
+        1
+      ]
+    ],
+    "generated_answers": [
+      [
+        3
+      ]
+    ],
+    "table_id": "1-1037590-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "How many characters is by Babs Rubenstein?",
+    "generated_question": "How many characters is not by Babs Rubenstein?",
+    "original_sql": "SELECT COUNT(col2) FROM table_1_10402018_1 WHERE col6 = 'Babs Rubenstein';",
+    "generated_sql": "SELECT COUNT(col2) FROM table_1_10402018_1 WHERE col6 != 'Babs Rubenstein';",
+    "original_answers": [
+      [
+        0
+      ]
+    ],
+    "generated_answers": [
+      [
+        10
+      ]
+    ],
+    "table_id": "1-10402018-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "Which person is in the tronto/broadway and has a uk tour of n/a",
+    "generated_question": "Which person is not in the tronto / broadway and has a uk tour of n / a",
+    "original_sql": "SELECT col3 FROM table_1_10402018_1 WHERE col5 = 'n/a';",
+    "generated_sql": "SELECT col3 FROM table_1_10402018_1 WHERE col5 != 'n/a';",
+    "original_answers": [
+      [
+        "james brown iii"
+      ]
+    ],
+    "generated_answers": [
+      [
+        "will swenson"
+      ],
+      [
+        "tony sheldon"
+      ],
+      [
+        "nick adams"
+      ],
+      [
+        "c. david johnson"
+      ],
+      [
+        "jessica phillips"
+      ],
+      [
+        "keala settle"
+      ],
+      [
+        "j. elaine marcos"
+      ],
+      [
+        "nathan lee graham"
+      ],
+      [
+        "mike mcgowan"
+      ]
+    ],
+    "table_id": "1-10402018-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "How many people play Frank in London?",
+    "generated_question": "How many people do not play Frank in London?",
+    "original_sql": "SELECT COUNT(col2) FROM table_1_10402018_1 WHERE col0 = 'Frank';",
+    "generated_sql": "SELECT COUNT(col2) FROM table_1_10402018_1 WHERE col0 != 'Frank';",
+    "original_answers": [
+      [
+        0
+      ]
+    ],
+    "generated_answers": [
+      [
+        10
+      ]
+    ],
+    "table_id": "1-10402018-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "What was the total number of Class AAA during the same year that Class AAA was White Oak?",
+    "generated_question": "What was not the total number of Class AAA during the same year that Class AAA was White Oak?",
+    "original_sql": "SELECT COUNT(col2) FROM table_1_10399701_2 WHERE col3 = 'White Oak';",
+    "generated_sql": "SELECT COUNT(col2) FROM table_1_10399701_2 WHERE col3 != 'White Oak';",
+    "original_answers": [
+      [
+        0
+      ]
+    ],
+    "generated_answers": [
+      [
+        22
+      ]
+    ],
+    "table_id": "1-10399701-2"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "How many records are listed on Friday, May 25?",
+    "generated_question": "How many records are not listed on Friday, May 25?",
+    "original_sql": "SELECT COUNT(col5) FROM table_1_10392906_2 WHERE col1 = 'Friday, May 25';",
+    "generated_sql": "SELECT COUNT(col5) FROM table_1_10392906_2 WHERE col1 != 'Friday, May 25';",
+    "original_answers": [
+      [
+        0
+      ]
+    ],
+    "generated_answers": [
+      [
+        9
+      ]
+    ],
+    "table_id": "1-10392906-2"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "How many opponents were played on Saturday, June 9?",
+    "generated_question": "How many opponents were not played on Saturday, June 9?",
+    "original_sql": "SELECT COUNT(col3) FROM table_1_10392906_2 WHERE col1 = 'Saturday, June 9';",
+    "generated_sql": "SELECT COUNT(col3) FROM table_1_10392906_2 WHERE col1 != 'Saturday, June 9';",
+    "original_answers": [
+      [
+        0
+      ]
+    ],
+    "generated_answers": [
+      [
+        9
+      ]
+    ],
+    "table_id": "1-10392906-2"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "In what week was the first game played at the Commerzbank-Arena?",
+    "generated_question": "In what week was not the first game played at the Commerzbank - Arena?",
+    "original_sql": "SELECT MIN(col0) FROM table_1_10392906_2 WHERE col6 = 'Commerzbank-Arena';",
+    "generated_sql": "SELECT MIN(col0) FROM table_1_10392906_2 WHERE col6 != 'Commerzbank-Arena';",
+    "original_answers": [
+      [
+        null
+      ]
+    ],
+    "generated_answers": [
+      [
+        1.0
+      ]
+    ],
+    "table_id": "1-10392906-2"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "What was the original air date of an episode set in 1544?",
+    "generated_question": "What was not the original air date of an episode set in 1544?",
+    "original_sql": "SELECT col7 FROM table_1_10413597_5 WHERE col3 = '1544';",
+    "generated_sql": "SELECT col7 FROM table_1_10413597_5 WHERE col3 != '1544';",
+    "original_answers": [
+      [
+        "june6,2010"
+      ]
+    ],
+    "generated_answers": [
+      [
+        "april11,2010"
+      ],
+      [
+        "april18,2010"
+      ],
+      [
+        "april25,2010"
+      ],
+      [
+        "may2,2010"
+      ],
+      [
+        "may9,2010"
+      ],
+      [
+        "may16,2010"
+      ],
+      [
+        "may23,2010"
+      ],
+      [
+        "june13,2010"
+      ]
+    ],
+    "table_id": "1-10413597-5"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "How many settings where there for episode 29 of the season?",
+    "generated_question": "not How many settings where there for episode 29 of the season?",
+    "original_sql": "SELECT COUNT(col3) FROM table_1_10413597_5 WHERE col0 = 29;",
+    "generated_sql": "SELECT COUNT(col3) FROM table_1_10413597_5 WHERE col0 != 29;",
+    "original_answers": [
+      [
+        1
+      ]
+    ],
+    "generated_answers": [
+      [
+        8
+      ]
+    ],
+    "table_id": "1-10413597-5"
+  },
+  {
+    "type": "numerical_expansion",
+    "original_question": "How many settings where there for episode 29 of the season?",
+    "generated_question": "How many settings where there for episode 29 of the season?",
+    "original_sql": "SELECT COUNT(col3) FROM table_1_10413597_5 WHERE col0 = 29;",
+    "generated_sql": "SELECT COUNT(col3) FROM table_1_10413597_5 WHERE col0 NOT BETWEEN 23 AND 34;",
+    "original_answers": [
+      [
+        1
+      ]
+    ],
+    "generated_answers": [
+      [
+        3
+      ]
+    ],
+    "table_id": "1-10413597-5"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "What is the total number of lyricist where the lyrics theme is romance and the song lasts 3:50?",
+    "generated_question": "What is not the total number of lyricist where the lyrics theme is romance and the song lasts 3:50?",
+    "original_sql": "SELECT COUNT(col4) FROM table_1_10416547_1 WHERE col7 = 'Romance' AND col8 = '3:50';",
+    "generated_sql": "SELECT COUNT(col4) FROM table_1_10416547_1 WHERE col7 != 'Romance' AND col8 != '3:50';",
+    "original_answers": [
+      [
+        0
+      ]
+    ],
+    "generated_answers": [
+      [
+        97
+      ]
+    ],
+    "table_id": "1-10416547-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "What is the total number of music genre/style in which the lyrics are a detective story?",
+    "generated_question": "What is not the total number of music genre / style in which the lyrics are a detective story?",
+    "original_sql": "SELECT COUNT(col5) FROM table_1_10416547_1 WHERE col7 = 'Detective story';",
+    "generated_sql": "SELECT COUNT(col5) FROM table_1_10416547_1 WHERE col7 != 'Detective story';",
+    "original_answers": [
+      [
+        0
+      ]
+    ],
+    "generated_answers": [
+      [
+        99
+      ]
+    ],
+    "table_id": "1-10416547-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "What is the number of the division for the 1st round?",
+    "generated_question": "What is not the number of the division for the 1st round?",
+    "original_sql": "SELECT COUNT(col1) FROM table_1_1046071_1 WHERE col5 = '1st Round';",
+    "generated_sql": "SELECT COUNT(col1) FROM table_1_1046071_1 WHERE col5 != '1st Round';",
+    "original_answers": [
+      [
+        0
+      ]
+    ],
+    "generated_answers": [
+      [
+        19
+      ]
+    ],
+    "table_id": "1-1046071-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "What is the total number of poles for arden international?",
+    "generated_question": "What is not the total number of poles for arden international?",
+    "original_sql": "SELECT COUNT(col5) FROM table_1_10420426_1 WHERE col2 = 'Arden International';",
+    "generated_sql": "SELECT COUNT(col5) FROM table_1_10420426_1 WHERE col2 != 'Arden International';",
+    "original_answers": [
+      [
+        0
+      ]
+    ],
+    "generated_answers": [
+      [
+        20
+      ]
+    ],
+    "table_id": "1-10420426-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "What is the number of wins for gp2 series for racing engineering?",
+    "generated_question": "What is not the number of wins for gp2 series for racing engineering?",
+    "original_sql": "SELECT COUNT(col4) FROM table_1_10420426_1 WHERE col1 = 'GP2 Series' AND col2 = 'Racing Engineering';",
+    "generated_sql": "SELECT COUNT(col4) FROM table_1_10420426_1 WHERE col1 != 'GP2 Series' AND col2 != 'Racing Engineering';",
+    "original_answers": [
+      [
+        0
+      ]
+    ],
+    "generated_answers": [
+      [
+        20
+      ]
+    ],
+    "table_id": "1-10420426-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "What is the number of podiums for season 2010 for campionato italiano superstars.",
+    "generated_question": "What is not the number of podiums for season 2010 for campionato italiano superstars.",
+    "original_sql": "SELECT COUNT(col7) FROM table_1_10420426_1 WHERE col0 = '2010' AND col1 = 'Campionato Italiano Superstars';",
+    "generated_sql": "SELECT COUNT(col7) FROM table_1_10420426_1 WHERE col0 != '2010' AND col1 != 'Campionato Italiano Superstars';",
+    "original_answers": [
+      [
+        0
+      ]
+    ],
+    "generated_answers": [
+      [
+        17
+      ]
+    ],
+    "table_id": "1-10420426-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "How many writers had an US air date of september 25, 1993?",
+    "generated_question": "How many writers had not an US air date of september 25, 1993?",
+    "original_sql": "SELECT COUNT(col4) FROM table_1_10470082_3 WHERE col5 = 'September 25, 1993';",
+    "generated_sql": "SELECT COUNT(col4) FROM table_1_10470082_3 WHERE col5 != 'September 25, 1993';",
+    "original_answers": [
+      [
+        0
+      ]
+    ],
+    "generated_answers": [
+      [
+        11
+      ]
+    ],
+    "table_id": "1-10470082-3"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "How many villians were in No. 25?",
+    "generated_question": "How many villians were not in No. 25?",
+    "original_sql": "SELECT COUNT(col7) FROM table_1_10470082_3 WHERE col0 = 25;",
+    "generated_sql": "SELECT COUNT(col7) FROM table_1_10470082_3 WHERE col0 != 25;",
+    "original_answers": [
+      [
+        1
+      ]
+    ],
+    "generated_answers": [
+      [
+        10
+      ]
+    ],
+    "table_id": "1-10470082-3"
+  },
+  {
+    "type": "numerical_expansion",
+    "original_question": "How many villians were in No. 25?",
+    "generated_question": "How many villians were in No. 25?",
+    "original_sql": "SELECT COUNT(col7) FROM table_1_10470082_3 WHERE col0 = 25;",
+    "generated_sql": "SELECT COUNT(col7) FROM table_1_10470082_3 WHERE col0 NOT BETWEEN 20 AND 30;",
+    "original_answers": [
+      [
+        1
+      ]
+    ],
+    "generated_answers": [
+      [
+        5
+      ]
+    ],
+    "table_id": "1-10470082-3"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "what being the maximum year where regular season is 4th, northwest",
+    "generated_question": "what being the maximum   year   where   regular season   is not 4th, northwest",
+    "original_sql": "SELECT MAX(col0) FROM table_1_1046454_1 WHERE col3 = '4th, Northwest';",
+    "generated_sql": "SELECT MAX(col0) FROM table_1_1046454_1 WHERE col3 != '4th, Northwest';",
+    "original_answers": [
+      [
+        null
+      ]
+    ],
+    "generated_answers": [
+      [
+        2012.0
+      ]
+    ],
+    "table_id": "1-1046454-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "what is the total number of playoffs where regular season is 6th, southwest",
+    "generated_question": "what is not the total number of   playoffs   where   regular season   is 6th, southwest",
+    "original_sql": "SELECT COUNT(col4) FROM table_1_1046454_1 WHERE col3 = '6th, Southwest';",
+    "generated_sql": "SELECT COUNT(col4) FROM table_1_1046454_1 WHERE col3 != '6th, Southwest';",
+    "original_answers": [
+      [
+        0
+      ]
+    ],
+    "generated_answers": [
+      [
+        10
+      ]
+    ],
+    "table_id": "1-1046454-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "what are all the regular season where year is 2011",
+    "generated_question": "what are not all the regular season where year is 2011",
+    "original_sql": "SELECT col3 FROM table_1_1046454_1 WHERE col0 = 2011;",
+    "generated_sql": "SELECT col3 FROM table_1_1046454_1 WHERE col0 != 2011;",
+    "original_answers": [
+      [
+        "5th, southwest"
+      ]
+    ],
+    "generated_answers": [
+      [
+        "4th, southwest"
+      ],
+      [
+        "4th, southwest"
+      ],
+      [
+        "4th, southwest"
+      ],
+      [
+        "2nd, northwest"
+      ],
+      [
+        "1st, northwest"
+      ],
+      [
+        "4th, northwest"
+      ],
+      [
+        "4th, southwest"
+      ],
+      [
+        "8th, southwest"
+      ],
+      [
+        "6th, southwest"
+      ]
+    ],
+    "table_id": "1-1046454-1"
+  },
+  {
+    "type": "temporal_expansion",
+    "original_question": "what are all the regular season where year is 2011",
+    "generated_question": "what are all the regular season where year is 2011",
+    "original_sql": "SELECT col3 FROM table_1_1046454_1 WHERE col0 = 2011;",
+    "generated_sql": "SELECT col3 FROM table_1_1046454_1 WHERE col0 NOT BETWEEN 2006 AND 2016;",
+    "original_answers": [
+      [
+        "5th, southwest"
+      ]
+    ],
+    "generated_answers": [
+      [
+        "4th, southwest"
+      ],
+      [
+        "4th, southwest"
+      ],
+      [
+        "4th, southwest"
+      ]
+    ],
+    "table_id": "1-1046454-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "How many titles have the number 11",
+    "generated_question": "How many titles have not the number 11",
+    "original_sql": "SELECT COUNT(col2) FROM table_1_10470082_5 WHERE col1 = 11;",
+    "generated_sql": "SELECT COUNT(col2) FROM table_1_10470082_5 WHERE col1 != 11;",
+    "original_answers": [
+      [
+        1
+      ]
+    ],
+    "generated_answers": [
+      [
+        11
+      ]
+    ],
+    "table_id": "1-10470082-5"
+  },
+  {
+    "type": "numerical_expansion",
+    "original_question": "How many titles have the number 11",
+    "generated_question": "How many titles have the number 11",
+    "original_sql": "SELECT COUNT(col2) FROM table_1_10470082_5 WHERE col1 = 11;",
+    "generated_sql": "SELECT COUNT(col2) FROM table_1_10470082_5 WHERE col1 NOT BETWEEN 8 AND 13;",
+    "original_answers": [
+      [
+        1
+      ]
+    ],
+    "generated_answers": [
+      [
+        7
+      ]
+    ],
+    "table_id": "1-10470082-5"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "How many have Mrs. briar as a villain",
+    "generated_question": "How many have not Mrs. briar as a villain",
+    "original_sql": "SELECT COUNT(col0) FROM table_1_10470082_5 WHERE col7 = 'Mrs. Briar';",
+    "generated_sql": "SELECT COUNT(col0) FROM table_1_10470082_5 WHERE col7 != 'Mrs. Briar';",
+    "original_answers": [
+      [
+        0
+      ]
+    ],
+    "generated_answers": [
+      [
+        12
+      ]
+    ],
+    "table_id": "1-10470082-5"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "how many have the number 8",
+    "generated_question": "how many have not the number 8",
+    "original_sql": "SELECT COUNT(col0) FROM table_1_10470082_5 WHERE col1 = 8;",
+    "generated_sql": "SELECT COUNT(col0) FROM table_1_10470082_5 WHERE col1 != 8;",
+    "original_answers": [
+      [
+        1
+      ]
+    ],
+    "generated_answers": [
+      [
+        11
+      ]
+    ],
+    "table_id": "1-10470082-5"
+  },
+  {
+    "type": "numerical_expansion",
+    "original_question": "how many have the number 8",
+    "generated_question": "how many have the number 8",
+    "original_sql": "SELECT COUNT(col0) FROM table_1_10470082_5 WHERE col1 = 8;",
+    "generated_sql": "SELECT COUNT(col0) FROM table_1_10470082_5 WHERE col1 NOT BETWEEN 6 AND 9;",
+    "original_answers": [
+      [
+        1
+      ]
+    ],
+    "generated_answers": [
+      [
+        8
+      ]
+    ],
+    "table_id": "1-10470082-5"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "How many have the title \"the tale of the room for rent\"",
+    "generated_question": "How many have not the title \" the tale of the room for rent \"",
+    "original_sql": "SELECT COUNT(col1) FROM table_1_10470082_5 WHERE col2 = '\"The Tale of the Room for Rent\"';",
+    "generated_sql": "SELECT COUNT(col1) FROM table_1_10470082_5 WHERE col2 != '\"The Tale of the Room for Rent\"';",
+    "original_answers": [
+      [
+        0
+      ]
+    ],
+    "generated_answers": [
+      [
+        12
+      ]
+    ],
+    "table_id": "1-10470082-5"
+  },
+  {
+    "type": "numerical_expansion",
+    "original_question": "Who wrote Episode #3?",
+    "generated_question": "Who wrote Episode #3?",
+    "original_sql": "SELECT col4 FROM table_1_10470082_6 WHERE col1 = 3;",
+    "generated_sql": "SELECT col4 FROM table_1_10470082_6 WHERE col1 NOT BETWEEN 2 AND 3;",
+    "original_answers": [
+      [
+        "scott peters"
+      ]
+    ],
+    "generated_answers": [
+      [
+        "will dixon"
+      ],
+      [
+        "david wiechorek"
+      ],
+      [
+        "mark d. perry"
+      ],
+      [
+        "alan kingsberg"
+      ],
+      [
+        "david preston"
+      ],
+      [
+        "gerald wexler"
+      ],
+      [
+        "alan kingsberg"
+      ],
+      [
+        "gerald wexler"
+      ],
+      [
+        "scott peters"
+      ],
+      [
+        "chloe brown"
+      ]
+    ],
+    "table_id": "1-10470082-6"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "How many villains appeared in the episode titled \"The Tale of the Virtual Pets\"?",
+    "generated_question": "How many villains did not appear in the episode titled \" The Tale of the Virtual Pets \"?",
+    "original_sql": "SELECT COUNT(col7) FROM table_1_10470082_7 WHERE col2 = '\"The Tale of The Virtual Pets\"';",
+    "generated_sql": "SELECT COUNT(col7) FROM table_1_10470082_7 WHERE col2 != '\"The Tale of The Virtual Pets\"';",
+    "original_answers": [
+      [
+        0
+      ]
+    ],
+    "generated_answers": [
+      [
+        12
+      ]
+    ],
+    "table_id": "1-10470082-7"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "What is the largest # for an episode that was written by Allison Lea Bingeman?",
+    "generated_question": "What is not the largest # for an episode that was written by Allison Lea Bingeman?",
+    "original_sql": "SELECT MAX(col1) FROM table_1_10470082_7 WHERE col4 = 'Allison Lea Bingeman';",
+    "generated_sql": "SELECT MAX(col1) FROM table_1_10470082_7 WHERE col4 != 'Allison Lea Bingeman';",
+    "original_answers": [
+      [
+        null
+      ]
+    ],
+    "generated_answers": [
+      [
+        13.0
+      ]
+    ],
+    "table_id": "1-10470082-7"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "Name the number of species with sepal width of 3.4 and sepal length of 5.4",
+    "generated_question": "do not name the number of species with sepal width of 3.4 and sepal length of 5.4",
+    "original_sql": "SELECT COUNT(col4) FROM table_1_10477224_1 WHERE col1 = '3.4' AND col0 = '5.4';",
+    "generated_sql": "SELECT COUNT(col4) FROM table_1_10477224_1 WHERE col1 != '3.4' AND col0 != '5.4';",
+    "original_answers": [
+      [
+        2
+      ]
+    ],
+    "generated_answers": [
+      [
+        133
+      ]
+    ],
+    "table_id": "1-10477224-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "Who is the director and what number is the episode for episode #1 of Are You Afraid of the Dark season 3?",
+    "generated_question": "Who is not the director and what number is the episode for episode # 1 of Are You Afraid of the Dark season 3?",
+    "original_sql": "SELECT COUNT(col3) FROM table_1_10470082_4 WHERE col1 = 1;",
+    "generated_sql": "SELECT COUNT(col3) FROM table_1_10470082_4 WHERE col1 != 1;",
+    "original_answers": [
+      [
+        1
+      ]
+    ],
+    "generated_answers": [
+      [
+        10
+      ]
+    ],
+    "table_id": "1-10470082-4"
+  },
+  {
+    "type": "numerical_expansion",
+    "original_question": "Who is the director and what number is the episode for episode #1 of Are You Afraid of the Dark season 3?",
+    "generated_question": "Who is the director and what number is the episode for episode #1 of Are You Afraid of the Dark season 3?",
+    "original_sql": "SELECT COUNT(col3) FROM table_1_10470082_4 WHERE col1 = 1;",
+    "generated_sql": "SELECT COUNT(col3) FROM table_1_10470082_4 WHERE col1 NOT BETWEEN 0 AND 1;",
+    "original_answers": [
+      [
+        1
+      ]
+    ],
+    "generated_answers": [
+      [
+        10
+      ]
+    ],
+    "table_id": "1-10470082-4"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "Who is the villain in episode #7?",
+    "generated_question": "Who is not the villain in episode # 7?",
+    "original_sql": "SELECT col7 FROM table_1_10470082_4 WHERE col1 = 7;",
+    "generated_sql": "SELECT col7 FROM table_1_10470082_4 WHERE col1 != 7;",
+    "original_answers": [
+      [
+        "septimus"
+      ]
+    ],
+    "generated_answers": [
+      [
+        "brad & the headless horseman"
+      ],
+      [
+        "none"
+      ],
+      [
+        "the old hags and the watcher"
+      ],
+      [
+        "the phone police"
+      ],
+      [
+        "the dollhouse"
+      ],
+      [
+        "dr. capel-smith"
+      ],
+      [
+        "the gremlin in the camera"
+      ],
+      [
+        "none"
+      ],
+      [
+        "the demon"
+      ],
+      [
+        "the crimson clown"
+      ]
+    ],
+    "table_id": "1-10470082-4"
+  },
+  {
+    "type": "numerical_expansion",
+    "original_question": "Who is the villain in episode #7?",
+    "generated_question": "Who is the villain in episode #7?",
+    "original_sql": "SELECT col7 FROM table_1_10470082_4 WHERE col1 = 7;",
+    "generated_sql": "SELECT col7 FROM table_1_10470082_4 WHERE col1 NOT BETWEEN 5 AND 8;",
+    "original_answers": [
+      [
+        "septimus"
+      ]
+    ],
+    "generated_answers": [
+      [
+        "brad & the headless horseman"
+      ],
+      [
+        "none"
+      ],
+      [
+        "the old hags and the watcher"
+      ],
+      [
+        "the phone police"
+      ],
+      [
+        "the gremlin in the camera"
+      ],
+      [
+        "none"
+      ],
+      [
+        "the demon"
+      ],
+      [
+        "the crimson clown"
+      ]
+    ],
+    "table_id": "1-10470082-4"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "Who wrote episode #1 in season 7?",
+    "generated_question": "Who did not write episode # 1 in season 7?",
+    "original_sql": "SELECT COUNT(col4) FROM table_1_10470082_8 WHERE col1 = 1;",
+    "generated_sql": "SELECT COUNT(col4) FROM table_1_10470082_8 WHERE col1 != 1;",
+    "original_answers": [
+      [
+        1
+      ]
+    ],
+    "generated_answers": [
+      [
+        11
+      ]
+    ],
+    "table_id": "1-10470082-8"
+  },
+  {
+    "type": "numerical_expansion",
+    "original_question": "Who wrote episode #1 in season 7?",
+    "generated_question": "Who wrote episode #1 in season 7?",
+    "original_sql": "SELECT COUNT(col4) FROM table_1_10470082_8 WHERE col1 = 1;",
+    "generated_sql": "SELECT COUNT(col4) FROM table_1_10470082_8 WHERE col1 NOT BETWEEN 0 AND 1;",
+    "original_answers": [
+      [
+        1
+      ]
+    ],
+    "generated_answers": [
+      [
+        11
+      ]
+    ],
+    "table_id": "1-10470082-8"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "What's the report on Penske Racing winning while the pole position was Al Unser?",
+    "generated_question": "What 's the report on Penske Racing winning while the pole position was not Al Unser?",
+    "original_sql": "SELECT COUNT(col6) FROM table_1_10527215_3 WHERE col2 = 'Al Unser' AND col5 = 'Penske Racing';",
+    "generated_sql": "SELECT COUNT(col6) FROM table_1_10527215_3 WHERE col2 != 'Al Unser' AND col5 != 'Penske Racing';",
+    "original_answers": [
+      [
+        0
+      ]
+    ],
+    "generated_answers": [
+      [
+        11
+      ]
+    ],
+    "table_id": "1-10527215-3"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "What is the model number introduced May 1999?",
+    "generated_question": "What is not the model number introduced May 1999?",
+    "original_sql": "SELECT MAX(col0) FROM table_1_10528691_4 WHERE col1 = 'May 1999';",
+    "generated_sql": "SELECT MAX(col0) FROM table_1_10528691_4 WHERE col1 != 'May 1999';",
+    "original_answers": [
+      [
+        null
+      ]
+    ],
+    "generated_answers": [
+      [
+        4300.0
+      ]
+    ],
+    "table_id": "1-10528691-4"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "How many winners are there of farma?",
+    "generated_question": "How many winners are not there of farma?",
+    "original_sql": "SELECT COUNT(col3) FROM table_1_1053802_1 WHERE col1 = 'Farma';",
+    "generated_sql": "SELECT COUNT(col3) FROM table_1_1053802_1 WHERE col1 != 'Farma';",
+    "original_answers": [
+      [
+        0
+      ]
+    ],
+    "generated_answers": [
+      [
+        13
+      ]
+    ],
+    "table_id": "1-1053802-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "What is the most cup goals for seasson 1911-12?",
+    "generated_question": "What is not the most cup goals for seasson 1911 - 12?",
+    "original_sql": "SELECT MAX(col5) FROM table_1_10556257_1 WHERE col0 = '1911-12';",
+    "generated_sql": "SELECT MAX(col5) FROM table_1_10556257_1 WHERE col0 != '1911-12';",
+    "original_answers": [
+      [
+        5.0
+      ]
+    ],
+    "generated_answers": [
+      [
+        7.0
+      ]
+    ],
+    "table_id": "1-10556257-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "what's the minimum attendance with score  10.16 (76) – 9.22 (76)",
+    "generated_question": "not what's the minimum attendance with score  10.16 (76) – 9.22 (76)",
+    "original_sql": "SELECT MIN(col6) FROM table_1_10566855_1 WHERE col3 = '10.16 (76) – 9.22 (76)';",
+    "generated_sql": "SELECT MIN(col6) FROM table_1_10566855_1 WHERE col3 != '10.16 (76) – 9.22 (76)';",
+    "original_answers": [
+      [
+        108244.0
+      ]
+    ],
+    "generated_answers": [
+      [
+        97457.0
+      ]
+    ],
+    "table_id": "1-10566855-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "who's the premier with in 1970",
+    "generated_question": "not who's the premier with in 1970",
+    "original_sql": "SELECT col1 FROM table_1_10566855_1 WHERE col0 = 1970;",
+    "generated_sql": "SELECT col1 FROM table_1_10566855_1 WHERE col0 != 1970;",
+    "original_answers": [
+      [
+        "carlton"
+      ]
+    ],
+    "generated_answers": [
+      [
+        "melbourne"
+      ],
+      [
+        "melbourne"
+      ],
+      [
+        "st kilda"
+      ],
+      [
+        "north melbourne"
+      ],
+      [
+        "north melbourne"
+      ],
+      [
+        "carlton"
+      ],
+      [
+        "richmond"
+      ]
+    ],
+    "table_id": "1-10566855-1"
+  },
+  {
+    "type": "temporal_expansion",
+    "original_question": "who's the premier with in 1970",
+    "generated_question": "who's the premier with not between 1965 and 1975",
+    "original_sql": "SELECT col1 FROM table_1_10566855_1 WHERE col0 = 1970;",
+    "generated_sql": "SELECT col1 FROM table_1_10566855_1 WHERE col0 NOT BETWEEN 1965 AND 1975;",
+    "original_answers": [
+      [
+        "carlton"
+      ]
+    ],
+    "generated_answers": [
+      [
+        "melbourne"
+      ],
+      [
+        "melbourne"
+      ],
+      [
+        "north melbourne"
+      ],
+      [
+        "north melbourne"
+      ],
+      [
+        "carlton"
+      ],
+      [
+        "richmond"
+      ]
+    ],
+    "table_id": "1-10566855-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "what is the minimum attendance with score 8.16 (64) – 8.12 (60)",
+    "generated_question": "what is not the minimum attendance with score 8.16 ( 64 ) – 8.12 ( 60 )",
+    "original_sql": "SELECT MIN(col6) FROM table_1_10566855_1 WHERE col3 = '8.16 (64) – 8.12 (60)';",
+    "generated_sql": "SELECT MIN(col6) FROM table_1_10566855_1 WHERE col3 != '8.16 (64) – 8.12 (60)';",
+    "original_answers": [
+      [
+        102469.0
+      ]
+    ],
+    "generated_answers": [
+      [
+        97457.0
+      ]
+    ],
+    "table_id": "1-10566855-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "How many mileposts are there on Anne Street?",
+    "generated_question": "How many mileposts are not there on Anne Street?",
+    "original_sql": "SELECT COUNT(col3) FROM table_1_10568553_1 WHERE col2 = 'Anne Street';",
+    "generated_sql": "SELECT COUNT(col3) FROM table_1_10568553_1 WHERE col2 != 'Anne Street';",
+    "original_answers": [
+      [
+        0
+      ]
+    ],
+    "generated_answers": [
+      [
+        5
+      ]
+    ],
+    "table_id": "1-10568553-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "Which street is 12.2 miles long?",
+    "generated_question": "Which street is not 12.2 miles long?",
+    "original_sql": "SELECT col2 FROM table_1_10568553_1 WHERE col3 = '12.2';",
+    "generated_sql": "SELECT col2 FROM table_1_10568553_1 WHERE col3 != '12.2';",
+    "original_answers": [
+      [
+        "north avenue plain street market street"
+      ]
+    ],
+    "generated_answers": [
+      [
+        "pleasant street turnpike street lindelof avenue"
+      ],
+      [
+        "anne street"
+      ],
+      [
+        "north avenue plain street market street"
+      ],
+      [
+        "hanover street rockland street columbia road"
+      ]
+    ],
+    "table_id": "1-10568553-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "Where is milepost 12.8?",
+    "generated_question": "Where is not milepost 12.8?",
+    "original_sql": "SELECT col1 FROM table_1_10568553_1 WHERE col3 = '12.8';",
+    "generated_sql": "SELECT col1 FROM table_1_10568553_1 WHERE col3 != '12.8';",
+    "original_answers": [
+      [
+        "rockland"
+      ]
+    ],
+    "generated_answers": [
+      [
+        "stoughton"
+      ],
+      [
+        "weymouth"
+      ],
+      [
+        "rockland"
+      ],
+      [
+        "hanover"
+      ]
+    ],
+    "table_id": "1-10568553-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "What is the minimum amount for wool for 2001-02?",
+    "generated_question": "What is not the minimum amount for wool for 2001 - 02?",
+    "original_sql": "SELECT MIN(col1) FROM table_1_1057262_1 WHERE col0 = 'Wool';",
+    "generated_sql": "SELECT MIN(col1) FROM table_1_1057262_1 WHERE col0 != 'Wool';",
+    "original_answers": [
+      [
+        null
+      ]
+    ],
+    "generated_answers": [
+      [
+        989.0
+      ]
+    ],
+    "table_id": "1-1057262-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "When was the train 2053 built?",
+    "generated_question": "When was not the train 2053 built?",
+    "original_sql": "SELECT col2 FROM table_1_1057316_1 WHERE col0 = '2053';",
+    "generated_sql": "SELECT col2 FROM table_1_1057316_1 WHERE col0 != '2053';",
+    "original_answers": [
+      [
+        "october, 1890"
+      ]
+    ],
+    "generated_answers": [
+      [
+        "october 1856"
+      ],
+      [
+        "february 1884"
+      ],
+      [
+        "february 1888"
+      ],
+      [
+        "october, 1890"
+      ],
+      [
+        "april 1892"
+      ],
+      [
+        "july 1896"
+      ]
+    ],
+    "table_id": "1-1057316-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "How many wheels does the train owned by Texas and New Orleans Railroad #319 have?",
+    "generated_question": "How many wheels does not the train owned by Texas and New Orleans Railroad # 319 have?",
+    "original_sql": "SELECT COUNT(col1) FROM table_1_1057316_1 WHERE col3 = 'Texas and New Orleans Railroad #319';",
+    "generated_sql": "SELECT COUNT(col1) FROM table_1_1057316_1 WHERE col3 != 'Texas and New Orleans Railroad #319';",
+    "original_answers": [
+      [
+        0
+      ]
+    ],
+    "generated_answers": [
+      [
+        7
+      ]
+    ],
+    "table_id": "1-1057316-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "What is the enrollment for the institution that was founded in 1866 and is a private/(african methodist) type?",
+    "generated_question": "What is not the enrollment for the institution that was founded in 1866 and is a private/(african methodist ) type?",
+    "original_sql": "SELECT MAX(col6) FROM table_1_10577579_2 WHERE col4 = 1866 AND col5 = 'Private/(African Methodist)';",
+    "generated_sql": "SELECT MAX(col6) FROM table_1_10577579_2 WHERE col4 != 1866 AND col5 != 'Private/(African Methodist)';",
+    "original_answers": [
+      [
+        null
+      ]
+    ],
+    "generated_answers": [
+      [
+        3200.0
+      ]
+    ],
+    "table_id": "1-10577579-2"
+  },
+  {
+    "type": "numerical_expansion",
+    "original_question": "What is the enrollment for the institution that was founded in 1866 and is a private/(african methodist) type?",
+    "generated_question": "What is the enrollment for the institution that was founded in 1866 and is a private/(african methodist) type?",
+    "original_sql": "SELECT MAX(col6) FROM table_1_10577579_2 WHERE col4 = 1866 AND col5 = 'Private/(African Methodist)';",
+    "generated_sql": "SELECT MAX(col6) FROM table_1_10577579_2 WHERE col4 NOT BETWEEN 1492 AND 2239 AND col5 = 'Private/(African Methodist)';",
+    "original_answers": [
+      [
+        null
+      ]
+    ],
+    "generated_answers": [
+      [
+        null
+      ]
+    ],
+    "table_id": "1-10577579-2"
+  },
+  {
+    "type": "temporal_expansion",
+    "original_question": "What is the enrollment for the institution that was founded in 1866 and is a private/(african methodist) type?",
+    "generated_question": "What is the enrollment for the institution that was founded not between 1861 and 1871 and is a private/(african methodist) type?",
+    "original_sql": "SELECT MAX(col6) FROM table_1_10577579_2 WHERE col4 = 1866 AND col5 = 'Private/(African Methodist)';",
+    "generated_sql": "SELECT MAX(col6) FROM table_1_10577579_2 WHERE col4 NOT BETWEEN 1861 AND 1871 AND col5 = 'Private/(African Methodist)';",
+    "original_answers": [
+      [
+        null
+      ]
+    ],
+    "generated_answers": [
+      [
+        null
+      ]
+    ],
+    "table_id": "1-10577579-2"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "That is the year founded for the institution location of Nashville, Tennessee?",
+    "generated_question": "That is not the year founded for the institution location of Nashville, Tennessee?",
+    "original_sql": "SELECT MIN(col4) FROM table_1_10577579_2 WHERE col1 = 'Nashville, Tennessee';",
+    "generated_sql": "SELECT MIN(col4) FROM table_1_10577579_2 WHERE col1 != 'Nashville, Tennessee';",
+    "original_answers": [
+      [
+        null
+      ]
+    ],
+    "generated_answers": [
+      [
+        1864.0
+      ]
+    ],
+    "table_id": "1-10577579-2"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "How many games had a score value of 813.5 in post-season play?",
+    "generated_question": "How many games had not a score value of 813.5 in post - season play?",
+    "original_sql": "SELECT COUNT(col4) FROM table_1_1059743_1 WHERE col2 = '813.5';",
+    "generated_sql": "SELECT COUNT(col4) FROM table_1_1059743_1 WHERE col2 != '813.5';",
+    "original_answers": [
+      [
+        1
+      ]
+    ],
+    "generated_answers": [
+      [
+        6
+      ]
+    ],
+    "table_id": "1-1059743-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "Did any team score games that totaled up to 860.5?",
+    "generated_question": "Did not any team score games that totaled up to 860.5?",
+    "original_sql": "SELECT col4 FROM table_1_1059743_1 WHERE col2 = '860.5';",
+    "generated_sql": "SELECT col4 FROM table_1_1059743_1 WHERE col2 != '860.5';",
+    "original_answers": [
+      [
+        0.0
+      ]
+    ],
+    "generated_answers": [
+      [
+        0.0
+      ],
+      [
+        1.0
+      ],
+      [
+        2.0
+      ],
+      [
+        0.0
+      ],
+      [
+        0.0
+      ],
+      [
+        0.0
+      ]
+    ],
+    "table_id": "1-1059743-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "How many institutions are located in wilmore, kentucky and private",
+    "generated_question": "How many institutions are not located in wilmore, kentucky and private",
+    "original_sql": "SELECT MAX(col3) FROM table_1_10581768_2 WHERE col4 = 'Private' AND col2 = 'Wilmore, Kentucky';",
+    "generated_sql": "SELECT MAX(col3) FROM table_1_10581768_2 WHERE col4 != 'Private' AND col2 != 'Wilmore, Kentucky';",
+    "original_answers": [
+      [
+        null
+      ]
+    ],
+    "generated_answers": [
+      [
+        1971.0
+      ]
+    ],
+    "table_id": "1-10581768-2"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "how many founded dates are listed for carlow university 1",
+    "generated_question": "how many founded dates are not listed for carlow university 1",
+    "original_sql": "SELECT COUNT(col3) FROM table_1_10581768_2 WHERE col0 = 'Carlow University 1';",
+    "generated_sql": "SELECT COUNT(col3) FROM table_1_10581768_2 WHERE col0 != 'Carlow University 1';",
+    "original_answers": [
+      [
+        0
+      ]
+    ],
+    "generated_answers": [
+      [
+        11
+      ]
+    ],
+    "table_id": "1-10581768-2"
+  },
+  {
+    "type": "numerical_expansion",
+    "original_question": "what is the original air date of the episode no in season 9?",
+    "generated_question": "what is the original air date of the episode no in season 9?",
+    "original_sql": "SELECT col5 FROM table_1_10610087_3 WHERE col1 = 9;",
+    "generated_sql": "SELECT col5 FROM table_1_10610087_3 WHERE col1 NOT BETWEEN 7 AND 10;",
+    "original_answers": [
+      [
+        "august16,2005"
+      ]
+    ],
+    "generated_answers": [
+      [
+        "june21,2005"
+      ],
+      [
+        "june28,2005"
+      ],
+      [
+        "july5,2005"
+      ],
+      [
+        "july12,2005"
+      ],
+      [
+        "july19,2005"
+      ],
+      [
+        "july26,2005"
+      ],
+      [
+        "august30,2005"
+      ],
+      [
+        "september6,2005"
+      ]
+    ],
+    "table_id": "1-10610087-3"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "How many episodes were titles \"voicemail\"?",
+    "generated_question": "How many episodes were not titles \" voicemail \"?",
+    "original_sql": "SELECT COUNT(col3) FROM table_1_10610087_3 WHERE col2 = '\"Voicemail\"';",
+    "generated_sql": "SELECT COUNT(col3) FROM table_1_10610087_3 WHERE col2 != '\"Voicemail\"';",
+    "original_answers": [
+      [
+        0
+      ]
+    ],
+    "generated_answers": [
+      [
+        12
+      ]
+    ],
+    "table_id": "1-10610087-3"
+  },
+  {
+    "type": "numerical_expansion",
+    "original_question": " what's the average where high score is 120",
+    "generated_question": " what's the average where high score is 120",
+    "original_sql": "SELECT col6 FROM table_1_10621256_1 WHERE col5 = 120;",
+    "generated_sql": "SELECT col6 FROM table_1_10621256_1 WHERE col5 NOT BETWEEN 96 AND 144;",
+    "original_answers": [
+      [
+        "49.76"
+      ]
+    ],
+    "generated_answers": [
+      [
+        "60.9"
+      ],
+      [
+        "44.19"
+      ],
+      [
+        "39.71"
+      ],
+      [
+        "29.86"
+      ],
+      [
+        "20.16"
+      ],
+      [
+        "15.87"
+      ],
+      [
+        "15.35"
+      ]
+    ],
+    "table_id": "1-10621256-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": " what's the player where 50 is 2 and n/o is 0",
+    "generated_question": "  what 's the   player   where   50   is not 2 and   n / o   is 0",
+    "original_sql": "SELECT col0 FROM table_1_10621256_1 WHERE col8 = 2 AND col3 = 0;",
+    "generated_sql": "SELECT col0 FROM table_1_10621256_1 WHERE col8 != 2 AND col3 != 0;",
+    "original_answers": [
+      [
+        "c m spearman"
+      ]
+    ],
+    "generated_answers": [
+      [
+        "h j h marshall"
+      ],
+      [
+        "a p r gidman"
+      ],
+      [
+        "kadeer ali"
+      ],
+      [
+        "w p c weston"
+      ],
+      [
+        "m a hardinges"
+      ],
+      [
+        "s j adshead"
+      ],
+      [
+        "j lewis"
+      ],
+      [
+        "m g n windows"
+      ],
+      [
+        "m c j ball"
+      ]
+    ],
+    "table_id": "1-10621256-1"
+  },
+  {
+    "type": "numerical_expansion",
+    "original_question": " what's the player where 50 is 2 and n/o is 0",
+    "generated_question": " what's the player where 50 is 2 and n/o is 0",
+    "original_sql": "SELECT col0 FROM table_1_10621256_1 WHERE col8 = 2 AND col3 = 0;",
+    "generated_sql": "SELECT col0 FROM table_1_10621256_1 WHERE col8 NOT BETWEEN 1 AND 2 AND col8 NOT BETWEEN 1 AND 2;",
+    "original_answers": [
+      [
+        "c m spearman"
+      ]
+    ],
+    "generated_answers": [
+      [
+        "h j h marshall"
+      ],
+      [
+        "a p r gidman"
+      ],
+      [
+        "kadeer ali"
+      ],
+      [
+        "w p c weston"
+      ],
+      [
+        "s j adshead"
+      ],
+      [
+        "c g taylor"
+      ],
+      [
+        "m g n windows"
+      ]
+    ],
+    "table_id": "1-10621256-1"
+  },
+  {
+    "type": "numerical_expansion",
+    "original_question": " what's the player where inns is 21",
+    "generated_question": " what's the player where inns is 21",
+    "original_sql": "SELECT col0 FROM table_1_10621256_1 WHERE col2 = 21;",
+    "generated_sql": "SELECT col0 FROM table_1_10621256_1 WHERE col2 NOT BETWEEN 16 AND 25;",
+    "original_answers": [
+      [
+        "h j h marshall"
+      ]
+    ],
+    "generated_answers": [
+      [
+        "i j harvey"
+      ],
+      [
+        "a p r gidman"
+      ],
+      [
+        "c m spearman"
+      ],
+      [
+        "m a hardinges"
+      ],
+      [
+        "s j adshead"
+      ],
+      [
+        "c g taylor"
+      ],
+      [
+        "j lewis"
+      ],
+      [
+        "m g n windows"
+      ],
+      [
+        "m c j ball"
+      ]
+    ],
+    "table_id": "1-10621256-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "What is the least number of candidates running were there when 80 seats were won?",
+    "generated_question": "What is not the least number of candidates running were there when 80 seats were won?",
+    "original_sql": "SELECT MIN(col1) FROM table_1_106367_2 WHERE col2 = 80;",
+    "generated_sql": "SELECT MIN(col1) FROM table_1_106367_2 WHERE col2 != 80;",
+    "original_answers": [
+      [
+        122.0
+      ]
+    ],
+    "generated_answers": [
+      [
+        108.0
+      ]
+    ],
+    "table_id": "1-106367-2"
+  },
+  {
+    "type": "numerical_expansion",
+    "original_question": "What is the least number of candidates running were there when 80 seats were won?",
+    "generated_question": "What is the least number of candidates running were there when 80 seats were won?",
+    "original_sql": "SELECT MIN(col1) FROM table_1_106367_2 WHERE col2 = 80;",
+    "generated_sql": "SELECT MIN(col1) FROM table_1_106367_2 WHERE col2 NOT BETWEEN 64 AND 96;",
+    "original_answers": [
+      [
+        122.0
+      ]
+    ],
+    "generated_answers": [
+      [
+        108.0
+      ]
+    ],
+    "table_id": "1-106367-2"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "How many seats were won in the election with 125 candidates?",
+    "generated_question": "How many seats were not won in the election with 125 candidates?",
+    "original_sql": "SELECT COUNT(col2) FROM table_1_106367_2 WHERE col1 = 125;",
+    "generated_sql": "SELECT COUNT(col2) FROM table_1_106367_2 WHERE col1 != 125;",
+    "original_answers": [
+      [
+        5
+      ]
+    ],
+    "generated_answers": [
+      [
+        6
+      ]
+    ],
+    "table_id": "1-106367-2"
+  },
+  {
+    "type": "numerical_expansion",
+    "original_question": "How many seats were won in the election with 125 candidates?",
+    "generated_question": "How many seats were won in the election with 125 candidates?",
+    "original_sql": "SELECT COUNT(col2) FROM table_1_106367_2 WHERE col1 = 125;",
+    "generated_sql": "SELECT COUNT(col2) FROM table_1_106367_2 WHERE col1 NOT BETWEEN 100 AND 150;",
+    "original_answers": [
+      [
+        5
+      ]
+    ],
+    "generated_answers": [
+      [
+        0
+      ]
+    ],
+    "table_id": "1-106367-2"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "How many people attended the game against the indianapolis colts?",
+    "generated_question": "How many people did not attend the game against the indianapolis colts?",
+    "original_sql": "SELECT COUNT(col6) FROM table_1_10647639_1 WHERE col2 = 'Indianapolis Colts';",
+    "generated_sql": "SELECT COUNT(col6) FROM table_1_10647639_1 WHERE col2 != 'Indianapolis Colts';",
+    "original_answers": [
+      [
+        0
+      ]
+    ],
+    "generated_answers": [
+      [
+        15
+      ]
+    ],
+    "table_id": "1-10647639-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "How many results are there for the 0-4 record?",
+    "generated_question": "How many results are not there for the 0 - 4 record?",
+    "original_sql": "SELECT COUNT(col3) FROM table_1_10646790_2 WHERE col5 = '0-4';",
+    "generated_sql": "SELECT COUNT(col3) FROM table_1_10646790_2 WHERE col5 != '0-4';",
+    "original_answers": [
+      [
+        1
+      ]
+    ],
+    "generated_answers": [
+      [
+        12
+      ]
+    ],
+    "table_id": "1-10646790-2"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "How many weeks are there that include the date October 11, 1969.",
+    "generated_question": "How many weeks are not there that include the date October 11, 1969.",
+    "original_sql": "SELECT COUNT(col0) FROM table_1_10646790_2 WHERE col1 = 'October 11, 1969';",
+    "generated_sql": "SELECT COUNT(col0) FROM table_1_10646790_2 WHERE col1 != 'October 11, 1969';",
+    "original_answers": [
+      [
+        0
+      ]
+    ],
+    "generated_answers": [
+      [
+        13
+      ]
+    ],
+    "table_id": "1-10646790-2"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "How many weeks are there that include the date November 9, 1969.",
+    "generated_question": "How many weeks are not there that include the date November 9, 1969.",
+    "original_sql": "SELECT COUNT(col0) FROM table_1_10646790_2 WHERE col1 = 'November 9, 1969';",
+    "generated_sql": "SELECT COUNT(col0) FROM table_1_10646790_2 WHERE col1 != 'November 9, 1969';",
+    "original_answers": [
+      [
+        0
+      ]
+    ],
+    "generated_answers": [
+      [
+        13
+      ]
+    ],
+    "table_id": "1-10646790-2"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "How many records are there at the War Memorial Stadium?",
+    "generated_question": "How many records are not there at the War Memorial Stadium?",
+    "original_sql": "SELECT COUNT(col5) FROM table_1_10646790_2 WHERE col4 = 'War Memorial Stadium';",
+    "generated_sql": "SELECT COUNT(col5) FROM table_1_10646790_2 WHERE col4 != 'War Memorial Stadium';",
+    "original_answers": [
+      [
+        0
+      ]
+    ],
+    "generated_answers": [
+      [
+        13
+      ]
+    ],
+    "table_id": "1-10646790-2"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "What was the minimum attendance on December 7, 1969?",
+    "generated_question": "What was not the minimum attendance on December 7, 1969?",
+    "original_sql": "SELECT MIN(col6) FROM table_1_10646790_2 WHERE col1 = 'December 7, 1969';",
+    "generated_sql": "SELECT MIN(col6) FROM table_1_10646790_2 WHERE col1 != 'December 7, 1969';",
+    "original_answers": [
+      [
+        null
+      ]
+    ],
+    "generated_answers": [
+      [
+        18346.0
+      ]
+    ],
+    "table_id": "1-10646790-2"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "What week corresponds to the last one to be played at the memorial stadium?",
+    "generated_question": "What week does not correspond to the last one to be played at the memorial stadium?",
+    "original_sql": "SELECT MAX(col0) FROM table_1_10647401_1 WHERE col3 = 'Memorial Stadium';",
+    "generated_sql": "SELECT MAX(col0) FROM table_1_10647401_1 WHERE col3 != 'Memorial Stadium';",
+    "original_answers": [
+      [
+        null
+      ]
+    ],
+    "generated_answers": [
+      [
+        15.0
+      ]
+    ],
+    "table_id": "1-10647401-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "what is the maximum pick # where player is anthony blaylock",
+    "generated_question": "what is not the maximum   pick #   where   player   is anthony blaylock",
+    "original_sql": "SELECT MAX(col0) FROM table_1_10650711_1 WHERE col2 = 'Anthony Blaylock';",
+    "generated_sql": "SELECT MAX(col0) FROM table_1_10650711_1 WHERE col2 != 'Anthony Blaylock';",
+    "original_answers": [
+      [
+        null
+      ]
+    ],
+    "generated_answers": [
+      [
+        188.0
+      ]
+    ],
+    "table_id": "1-10650711-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "what is the minimum pick # where position is defensive tackle",
+    "generated_question": "what is not the minimum   pick #   where   position   is defensive tackle",
+    "original_sql": "SELECT MIN(col0) FROM table_1_10650711_1 WHERE col3 = 'Defensive Tackle';",
+    "generated_sql": "SELECT MIN(col0) FROM table_1_10650711_1 WHERE col3 != 'Defensive Tackle';",
+    "original_answers": [
+      [
+        null
+      ]
+    ],
+    "generated_answers": [
+      [
+        21.0
+      ]
+    ],
+    "table_id": "1-10650711-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "What is Friesland's gdp per capita?",
+    "generated_question": "What is not Friesland 's gdp per capita?",
+    "original_sql": "SELECT MIN(col5) FROM table_1_1067441_1 WHERE col0 = 'Friesland';",
+    "generated_sql": "SELECT MIN(col5) FROM table_1_1067441_1 WHERE col0 != 'Friesland';",
+    "original_answers": [
+      [
+        null
+      ]
+    ],
+    "generated_answers": [
+      [
+        19439.0
+      ]
+    ],
+    "table_id": "1-1067441-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "What is the area of the place that has a population density of 331.4?",
+    "generated_question": "What is not the area of the place that has a population density of 331.4?",
+    "original_sql": "SELECT MAX(col2) FROM table_1_1067441_1 WHERE col3 = '331.4';",
+    "generated_sql": "SELECT MAX(col2) FROM table_1_1067441_1 WHERE col3 != '331.4';",
+    "original_answers": [
+      [
+        3337.0
+      ]
+    ],
+    "generated_answers": [
+      [
+        4995.0
+      ]
+    ],
+    "table_id": "1-1067441-1"
+  },
+  {
+    "type": "numerical_expansion",
+    "original_question": "Which province has a gdp of 38355€  million euros?",
+    "generated_question": "Which province has a gdp of 38355€  million euros?",
+    "original_sql": "SELECT col0 FROM table_1_1067441_1 WHERE col4 = 38355;",
+    "generated_sql": "SELECT col0 FROM table_1_1067441_1 WHERE col4 NOT BETWEEN 30684 AND 46026;",
+    "original_answers": [
+      [
+        "utrecht"
+      ]
+    ],
+    "generated_answers": [
+      [
+        "south holland"
+      ],
+      [
+        "north holland"
+      ],
+      [
+        "limburg"
+      ],
+      [
+        "north brabant"
+      ],
+      [
+        "overijssel"
+      ],
+      [
+        "flevoland"
+      ],
+      [
+        "groningen"
+      ],
+      [
+        "zeeland"
+      ],
+      [
+        "friesland"
+      ],
+      [
+        "drenthe"
+      ]
+    ],
+    "table_id": "1-1067441-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "How many episodes aired in Region 2 beginning May 26, 2008?",
+    "generated_question": "How many episodes did not air in Region 2 beginning May 26, 2008?",
+    "original_sql": "SELECT MIN(col1) FROM table_1_1067134_1 WHERE col3 = 'May 26, 2008';",
+    "generated_sql": "SELECT MIN(col1) FROM table_1_1067134_1 WHERE col3 != 'May 26, 2008';",
+    "original_answers": [
+      [
+        null
+      ]
+    ],
+    "generated_answers": [
+      [
+        10.0
+      ]
+    ],
+    "table_id": "1-1067134-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "How many points for 2005?",
+    "generated_question": "not How many points for 2005?",
+    "original_sql": "SELECT COUNT(col6) FROM table_1_10705060_1 WHERE col0 = '2005';",
+    "generated_sql": "SELECT COUNT(col6) FROM table_1_10705060_1 WHERE col0 != '2005';",
+    "original_answers": [
+      [
+        1
+      ]
+    ],
+    "generated_answers": [
+      [
+        9
+      ]
+    ],
+    "table_id": "1-10705060-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "how many positions in 2009?",
+    "generated_question": "not how many positions in 2009?",
+    "original_sql": "SELECT COUNT(col7) FROM table_1_10705060_1 WHERE col0 = '2009';",
+    "generated_sql": "SELECT COUNT(col7) FROM table_1_10705060_1 WHERE col0 != '2009';",
+    "original_answers": [
+      [
+        1
+      ]
+    ],
+    "generated_answers": [
+      [
+        9
+      ]
+    ],
+    "table_id": "1-10705060-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "Which series with 62 points?",
+    "generated_question": "not Which series with 62 points?",
+    "original_sql": "SELECT col1 FROM table_1_10705060_1 WHERE col6 = 62;",
+    "generated_sql": "SELECT col1 FROM table_1_10705060_1 WHERE col6 != 62;",
+    "original_answers": [
+      [
+        "german formula three"
+      ]
+    ],
+    "generated_answers": [
+      [
+        "formula bmw adac"
+      ],
+      [
+        "formula bmw adac"
+      ],
+      [
+        "formula 3 euro series"
+      ],
+      [
+        "formula 3 euro series"
+      ],
+      [
+        "gp2 asia series"
+      ],
+      [
+        "gp2 series"
+      ],
+      [
+        "gp2 series"
+      ],
+      [
+        "deutsche tourenwagen masters"
+      ],
+      [
+        "deutsche tourenwagen masters"
+      ]
+    ],
+    "table_id": "1-10705060-1"
+  },
+  {
+    "type": "numerical_expansion",
+    "original_question": "Which series with 62 points?",
+    "generated_question": "Which series with 62 points?",
+    "original_sql": "SELECT col1 FROM table_1_10705060_1 WHERE col6 = 62;",
+    "generated_sql": "SELECT col1 FROM table_1_10705060_1 WHERE col6 NOT BETWEEN 49 AND 74;",
+    "original_answers": [
+      [
+        "german formula three"
+      ]
+    ],
+    "generated_answers": [
+      [
+        "formula bmw adac"
+      ],
+      [
+        "formula bmw adac"
+      ],
+      [
+        "formula 3 euro series"
+      ],
+      [
+        "formula 3 euro series"
+      ],
+      [
+        "gp2 asia series"
+      ],
+      [
+        "gp2 series"
+      ],
+      [
+        "gp2 series"
+      ],
+      [
+        "deutsche tourenwagen masters"
+      ],
+      [
+        "deutsche tourenwagen masters"
+      ]
+    ],
+    "table_id": "1-10705060-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "What is the total for 10th position?",
+    "generated_question": "What is not the total for 10th position?",
+    "original_sql": "SELECT COUNT(col6) FROM table_1_10705060_1 WHERE col7 = '10th';",
+    "generated_sql": "SELECT COUNT(col6) FROM table_1_10705060_1 WHERE col7 != '10th';",
+    "original_answers": [
+      [
+        1
+      ]
+    ],
+    "generated_answers": [
+      [
+        9
+      ]
+    ],
+    "table_id": "1-10705060-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "how many reports of races took place on october 16?",
+    "generated_question": "how many reports of races did not take place on october 16?",
+    "original_sql": "SELECT COUNT(col8) FROM table_1_10707142_2 WHERE col4 = 'October 16';",
+    "generated_sql": "SELECT COUNT(col8) FROM table_1_10707142_2 WHERE col4 != 'October 16';",
+    "original_answers": [
+      [
+        0
+      ]
+    ],
+    "generated_answers": [
+      [
+        15
+      ]
+    ],
+    "table_id": "1-10707142-2"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "What is the literacy rate for groups that grew 103.1% between 1991 and 2001?",
+    "generated_question": "What is not the literacy rate for groups that grew 103.1 % between 1991 and 2001?",
+    "original_sql": "SELECT col4 FROM table_1_10710364_2 WHERE col2 = '103.1%';",
+    "generated_sql": "SELECT col4 FROM table_1_10710364_2 WHERE col2 != '103.1%';",
+    "original_answers": [
+      [
+        "47.0%"
+      ]
+    ],
+    "generated_answers": [
+      [
+        "65.1%"
+      ],
+      [
+        "59.1%"
+      ],
+      [
+        "80.3%"
+      ],
+      [
+        "69.4%"
+      ],
+      [
+        "72.7%"
+      ]
+    ],
+    "table_id": "1-10710364-2"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "What is the lowest child sex ratio in groups where employment is 31.3%?",
+    "generated_question": "What is not the lowest child sex ratio in groups where employment is 31.3 %?",
+    "original_sql": "SELECT MIN(col8) FROM table_1_10710364_2 WHERE col5 = '31.3%';",
+    "generated_sql": "SELECT MIN(col8) FROM table_1_10710364_2 WHERE col5 != '31.3%';",
+    "original_answers": [
+      [
+        950.0
+      ]
+    ],
+    "generated_answers": [
+      [
+        786.0
+      ]
+    ],
+    "table_id": "1-10710364-2"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "What is the population percentage of the group where the rural sex ratio is 953?",
+    "generated_question": "What is not the population percentage of the group where the rural sex ratio is 953?",
+    "original_sql": "SELECT col1 FROM table_1_10710364_2 WHERE col6 = 953;",
+    "generated_sql": "SELECT col1 FROM table_1_10710364_2 WHERE col6 != 953;",
+    "original_answers": [
+      [
+        "13.43%"
+      ]
+    ],
+    "generated_answers": [
+      [
+        "80.46%"
+      ],
+      [
+        "2.34%"
+      ],
+      [
+        "1.87%"
+      ],
+      [
+        "0.77%"
+      ],
+      [
+        "0.72%"
+      ]
+    ],
+    "table_id": "1-10710364-2"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "How many episodes were titled \"identity crisis\"?",
+    "generated_question": "How many episodes were not titled \" identity crisis \"?",
+    "original_sql": "SELECT COUNT(col3) FROM table_1_10715317_2 WHERE col2 = '\"Identity Crisis\"';",
+    "generated_sql": "SELECT COUNT(col3) FROM table_1_10715317_2 WHERE col2 != '\"Identity Crisis\"';",
+    "original_answers": [
+      [
+        0
+      ]
+    ],
+    "generated_answers": [
+      [
+        21
+      ]
+    ],
+    "table_id": "1-10715317-2"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "Who does the lap-by-lap in 2011?",
+    "generated_question": "Who does not the lap - by - lap in 2011?",
+    "original_sql": "SELECT col4 FROM table_1_10716893_3 WHERE col0 = 2011;",
+    "generated_sql": "SELECT col4 FROM table_1_10716893_3 WHERE col0 != 2011;",
+    "original_answers": [
+      [
+        "marty reid"
+      ]
+    ],
+    "generated_answers": [
+      [
+        "marty reid"
+      ],
+      [
+        "allen bestwick"
+      ],
+      [
+        "marty reid"
+      ],
+      [
+        "marty reid"
+      ]
+    ],
+    "table_id": "1-10716893-3"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "How many pre-race analysis occur when Allen Bestwick does the lap-by-lap?",
+    "generated_question": "How many pre - race analysis occur when Allen Bestwick does not the lap - by - lap?",
+    "original_sql": "SELECT COUNT(col3) FROM table_1_10716893_3 WHERE col4 = 'Allen Bestwick';",
+    "generated_sql": "SELECT COUNT(col3) FROM table_1_10716893_3 WHERE col4 != 'Allen Bestwick';",
+    "original_answers": [
+      [
+        0
+      ]
+    ],
+    "generated_answers": [
+      [
+        5
+      ]
+    ],
+    "table_id": "1-10716893-3"
+  },
+  {
+    "type": "numerical_expansion",
+    "original_question": "What's the date of the first airing of the episode with series number 63?",
+    "generated_question": "What's the date of the first airing of the episode with series number 63?",
+    "original_sql": "SELECT col5 FROM table_1_10718192_2 WHERE col0 = 63;",
+    "generated_sql": "SELECT col5 FROM table_1_10718192_2 WHERE col0 NOT BETWEEN 50 AND 75;",
+    "original_answers": [
+      [
+        "march13,2003"
+      ]
+    ],
+    "generated_answers": [
+      [
+        "september26,2002"
+      ],
+      [
+        "october3,2002"
+      ],
+      [
+        "october10,2002"
+      ]
+    ],
+    "table_id": "1-10718192-2"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "How many titles got a viewership of 26.53 million?",
+    "generated_question": "How many titles did not get a viewership of 26.53 million?",
+    "original_sql": "SELECT COUNT(col2) FROM table_1_10718525_2 WHERE col6 = '26.53';",
+    "generated_sql": "SELECT COUNT(col2) FROM table_1_10718525_2 WHERE col6 != '26.53';",
+    "original_answers": [
+      [
+        1
+      ]
+    ],
+    "generated_answers": [
+      [
+        15
+      ]
+    ],
+    "table_id": "1-10718525-2"
+  },
+  {
+    "type": "numerical_expansion",
+    "original_question": "Who wrote episode 94?",
+    "generated_question": "Who wrote episode 94?",
+    "original_sql": "SELECT col4 FROM table_1_10718631_2 WHERE col0 = 94;",
+    "generated_sql": "SELECT col4 FROM table_1_10718631_2 WHERE col0 NOT BETWEEN 75 AND 112;",
+    "original_answers": [
+      [
+        "naren shankar"
+      ]
+    ],
+    "generated_answers": [
+      [
+        "sarah goldfinger & richard j. lewis & uttam narsu"
+      ],
+      [
+        "areanne lloyd"
+      ]
+    ],
+    "table_id": "1-10718631-2"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "How many titles were there for the 113 episode?",
+    "generated_question": "How many titles were not there for the 113 episode?",
+    "original_sql": "SELECT COUNT(col2) FROM table_1_10718631_2 WHERE col0 = 113;",
+    "generated_sql": "SELECT COUNT(col2) FROM table_1_10718631_2 WHERE col0 != 113;",
+    "original_answers": [
+      [
+        1
+      ]
+    ],
+    "generated_answers": [
+      [
+        18
+      ]
+    ],
+    "table_id": "1-10718631-2"
+  },
+  {
+    "type": "numerical_expansion",
+    "original_question": "How many titles were there for the 113 episode?",
+    "generated_question": "How many titles were there for the 113 episode?",
+    "original_sql": "SELECT COUNT(col2) FROM table_1_10718631_2 WHERE col0 = 113;",
+    "generated_sql": "SELECT COUNT(col2) FROM table_1_10718631_2 WHERE col0 NOT BETWEEN 90 AND 135;",
+    "original_answers": [
+      [
+        1
+      ]
+    ],
+    "generated_answers": [
+      [
+        0
+      ]
+    ],
+    "table_id": "1-10718631-2"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "What is the number in the season that Marlene Meyer wrote and 20.49 million people watched?",
+    "generated_question": "What is not the number in the season that Marlene Meyer wrote and 20.49 million people watched?",
+    "original_sql": "SELECT MAX(col1) FROM table_1_10718984_2 WHERE col4 = 'Marlene Meyer' AND col6 = '20.49';",
+    "generated_sql": "SELECT MAX(col1) FROM table_1_10718984_2 WHERE col4 != 'Marlene Meyer' AND col6 != '20.49';",
+    "original_answers": [
+      [
+        null
+      ]
+    ],
+    "generated_answers": [
+      [
+        23.0
+      ]
+    ],
+    "table_id": "1-10718984-2"
+  },
+  {
+    "type": "numerical_expansion",
+    "original_question": "When did the no. 23 show originally air?",
+    "generated_question": "When did the no. 23 show originally air?",
+    "original_sql": "SELECT col5 FROM table_1_10718984_2 WHERE col1 = 23;",
+    "generated_sql": "SELECT col5 FROM table_1_10718984_2 WHERE col1 NOT BETWEEN 18 AND 27;",
+    "original_answers": [
+      [
+        "may10,2007"
+      ]
+    ],
+    "generated_answers": [
+      [
+        "october12,2006"
+      ],
+      [
+        "october19,2006"
+      ],
+      [
+        "november2,2006"
+      ],
+      [
+        "november16,2006"
+      ],
+      [
+        "december7,2006"
+      ],
+      [
+        "january18,2007"
+      ],
+      [
+        "february1,2007"
+      ],
+      [
+        "february15,2007"
+      ],
+      [
+        "february22,2007"
+      ]
+    ],
+    "table_id": "1-10718984-2"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "How many rounds were there of the Bosch Spark Plug Grand Prix?",
+    "generated_question": "How many rounds were not there of the Bosch Spark Plug Grand Prix?",
+    "original_sql": "SELECT COUNT(col0) FROM table_1_10725629_2 WHERE col1 = 'Bosch Spark Plug Grand Prix';",
+    "generated_sql": "SELECT COUNT(col0) FROM table_1_10725629_2 WHERE col1 != 'Bosch Spark Plug Grand Prix';",
+    "original_answers": [
+      [
+        0
+      ]
+    ],
+    "generated_answers": [
+      [
+        16
+      ]
+    ],
+    "table_id": "1-10725629-2"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "On how many dates did the Michigan International Speedway hold a round?",
+    "generated_question": "On how many dates did not the Michigan International Speedway hold a round?",
+    "original_sql": "SELECT COUNT(col4) FROM table_1_10725629_2 WHERE col2 = 'Michigan International Speedway';",
+    "generated_sql": "SELECT COUNT(col4) FROM table_1_10725629_2 WHERE col2 != 'Michigan International Speedway';",
+    "original_answers": [
+      [
+        0
+      ]
+    ],
+    "generated_answers": [
+      [
+        16
+      ]
+    ],
+    "table_id": "1-10725629-2"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "Name the total number of bids of the sun belt conference",
+    "generated_question": "do not name the total number of bids of the sun belt conference",
+    "original_sql": "SELECT COUNT(col1) FROM table_1_10722506_6 WHERE col0 = 'Sun Belt';",
+    "generated_sql": "SELECT COUNT(col1) FROM table_1_10722506_6 WHERE col0 != 'Sun Belt';",
+    "original_answers": [
+      [
+        0
+      ]
+    ],
+    "generated_answers": [
+      [
+        13
+      ]
+    ],
+    "table_id": "1-10722506-6"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "What is the number of bids with elite eight larger than 1.0",
+    "generated_question": "What is not the number of bids with elite eight larger than 1.0",
+    "original_sql": "SELECT COUNT(col1) FROM table_1_10722506_6 WHERE col6 > 1.0;",
+    "generated_sql": "SELECT COUNT(col1) FROM table_1_10722506_6 WHERE col6 <= 1.0;",
+    "original_answers": [
+      [
+        1
+      ]
+    ],
+    "generated_answers": [
+      [
+        12
+      ]
+    ],
+    "table_id": "1-10722506-6"
+  },
+  {
+    "type": "numerical_expansion",
+    "original_question": "What is the number of bids with elite eight larger than 1.0",
+    "generated_question": "What is the number of bids with elite eight larger than 1.0",
+    "original_sql": "SELECT COUNT(col1) FROM table_1_10722506_6 WHERE col6 > 1.0;",
+    "generated_sql": "SELECT COUNT(col1) FROM table_1_10722506_6 WHERE col6 NOT BETWEEN 0 AND 1.0;",
+    "original_answers": [
+      [
+        1
+      ]
+    ],
+    "generated_answers": [
+      [
+        1
+      ]
+    ],
+    "table_id": "1-10722506-6"
+  },
+  {
+    "type": "numerical_expansion",
+    "original_question": "What place is the team that completed 6 races?",
+    "generated_question": "What place is the team that completed 6 races?",
+    "original_sql": "SELECT col9 FROM table_1_10748727_1 WHERE col3 = 6;",
+    "generated_sql": "SELECT col9 FROM table_1_10748727_1 WHERE col3 NOT BETWEEN 4 AND 7;",
+    "original_answers": [
+      [
+        "11th"
+      ]
+    ],
+    "generated_answers": [
+      [
+        "1st"
+      ],
+      [
+        "5th"
+      ],
+      [
+        "nc"
+      ],
+      [
+        "1st"
+      ],
+      [
+        "4th"
+      ],
+      [
+        "17th"
+      ],
+      [
+        "10th"
+      ],
+      [
+        "2nd"
+      ],
+      [
+        "8th"
+      ]
+    ],
+    "table_id": "1-10748727-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "how many races were in 2009 with 0 wins?",
+    "generated_question": "how many races were not in 2009 with 0 wins?",
+    "original_sql": "SELECT col3 FROM table_1_10748727_1 WHERE col0 = '2009' AND col4 = 0;",
+    "generated_sql": "SELECT col3 FROM table_1_10748727_1 WHERE col0 != '2009' AND col4 != 0;",
+    "original_answers": [
+      [
+        1.0
+      ]
+    ],
+    "generated_answers": [
+      [
+        18.0
+      ],
+      [
+        20.0
+      ],
+      [
+        20.0
+      ],
+      [
+        24.0
+      ]
+    ],
+    "table_id": "1-10748727-1"
+  },
+  {
+    "type": "numerical_expansion",
+    "original_question": "how many races were in 2009 with 0 wins?",
+    "generated_question": "how many races were in 2009 with 0 wins?",
+    "original_sql": "SELECT col3 FROM table_1_10748727_1 WHERE col0 = '2009' AND col4 = 0;",
+    "generated_sql": "SELECT col3 FROM table_1_10748727_1 WHERE col0 = '2009' AND col4 NOT BETWEEN 0 AND 0;",
+    "original_answers": [
+      [
+        1.0
+      ]
+    ],
+    "generated_answers": [
+      [
+        6.0
+      ],
+      [
+        16.0
+      ]
+    ],
+    "table_id": "1-10748727-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "what is the greatest number of wins by japanese formula three?",
+    "generated_question": "what is not the greatest number of wins by japanese formula three?",
+    "original_sql": "SELECT MAX(col4) FROM table_1_10748727_1 WHERE col1 = 'Japanese Formula Three';",
+    "generated_sql": "SELECT MAX(col4) FROM table_1_10748727_1 WHERE col1 != 'Japanese Formula Three';",
+    "original_answers": [
+      [
+        null
+      ]
+    ],
+    "generated_answers": [
+      [
+        7.0
+      ]
+    ],
+    "table_id": "1-10748727-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "Who took test #4?",
+    "generated_question": "Who did not take test # 4?",
+    "original_sql": "SELECT col4 FROM table_1_10749367_3 WHERE col0 = 4;",
+    "generated_sql": "SELECT col4 FROM table_1_10749367_3 WHERE col0 != 4;",
+    "original_answers": [
+      [
+        "belinda"
+      ]
+    ],
+    "generated_answers": [
+      [
+        "n/a"
+      ],
+      [
+        "shannan"
+      ],
+      [
+        "virgilia"
+      ],
+      [
+        "robert"
+      ],
+      [
+        "naida"
+      ],
+      [
+        "virgilia"
+      ],
+      [
+        "naida"
+      ],
+      [
+        "shannan"
+      ],
+      [
+        "david"
+      ],
+      [
+        "sharni"
+      ]
+    ],
+    "table_id": "1-10749367-3"
+  },
+  {
+    "type": "numerical_expansion",
+    "original_question": "Who took test #4?",
+    "generated_question": "Who took test #4?",
+    "original_sql": "SELECT col4 FROM table_1_10749367_3 WHERE col0 = 4;",
+    "generated_sql": "SELECT col4 FROM table_1_10749367_3 WHERE col0 NOT BETWEEN 3 AND 4;",
+    "original_answers": [
+      [
+        "belinda"
+      ]
+    ],
+    "generated_answers": [
+      [
+        "n/a"
+      ],
+      [
+        "shannan"
+      ],
+      [
+        "robert"
+      ],
+      [
+        "naida"
+      ],
+      [
+        "virgilia"
+      ],
+      [
+        "naida"
+      ],
+      [
+        "shannan"
+      ],
+      [
+        "david"
+      ],
+      [
+        "sharni"
+      ]
+    ],
+    "table_id": "1-10749367-3"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "What episode aired on 18 April 2007?",
+    "generated_question": "What episode did not air on 18 April 2007?",
+    "original_sql": "SELECT MIN(col0) FROM table_1_10749367_3 WHERE col1 = '18 April 2007';",
+    "generated_sql": "SELECT MIN(col0) FROM table_1_10749367_3 WHERE col1 != '18 April 2007';",
+    "original_answers": [
+      [
+        null
+      ]
+    ],
+    "generated_answers": [
+      [
+        1.0
+      ]
+    ],
+    "table_id": "1-10749367-3"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "How many directors were there for the film Course Completed?",
+    "generated_question": "How many directors were not there for the film Course Completed?",
+    "original_sql": "SELECT COUNT(col3) FROM table_1_10798928_1 WHERE col1 = 'Course Completed';",
+    "generated_sql": "SELECT COUNT(col3) FROM table_1_10798928_1 WHERE col1 != 'Course Completed';",
+    "original_answers": [
+      [
+        0
+      ]
+    ],
+    "generated_answers": [
+      [
+        46
+      ]
+    ],
+    "table_id": "1-10798928-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "How many villages had 21.7% of slovenes in 1991?",
+    "generated_question": "How many villages had not 21.7 % of slovenes in 1991?",
+    "original_sql": "SELECT COUNT(col0) FROM table_1_10797463_1 WHERE col3 = '21.7%';",
+    "generated_sql": "SELECT COUNT(col0) FROM table_1_10797463_1 WHERE col3 != '21.7%';",
+    "original_answers": [
+      [
+        1
+      ]
+    ],
+    "generated_answers": [
+      [
+        11
+      ]
+    ],
+    "table_id": "1-10797463-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "What's the pick number of the player from Toronto Argonauts?",
+    "generated_question": "not What's the pick number of the player from Toronto Argonauts?",
+    "original_sql": "SELECT MIN(col0) FROM table_1_10812938_5 WHERE col1 = 'Toronto Argonauts';",
+    "generated_sql": "SELECT MIN(col0) FROM table_1_10812938_5 WHERE col1 != 'Toronto Argonauts';",
+    "original_answers": [
+      [
+        null
+      ]
+    ],
+    "generated_answers": [
+      [
+        35.0
+      ]
+    ],
+    "table_id": "1-10812938-5"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "What's the pick number of the player from New Mexico?",
+    "generated_question": "not What's the pick number of the player from New Mexico?",
+    "original_sql": "SELECT MAX(col0) FROM table_1_10812938_5 WHERE col4 = 'New Mexico';",
+    "generated_sql": "SELECT MAX(col0) FROM table_1_10812938_5 WHERE col4 != 'New Mexico';",
+    "original_answers": [
+      [
+        null
+      ]
+    ],
+    "generated_answers": [
+      [
+        41.0
+      ]
+    ],
+    "table_id": "1-10812938-5"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "What is the minimum introduced value for the Departmental region?",
+    "generated_question": "What is not the minimum introduced value for the Departmental region?",
+    "original_sql": "SELECT MIN(col2) FROM table_1_1081459_1 WHERE col4 = 'Departmental';",
+    "generated_sql": "SELECT MIN(col2) FROM table_1_1081459_1 WHERE col4 != 'Departmental';",
+    "original_answers": [
+      [
+        null
+      ]
+    ],
+    "generated_answers": [
+      [
+        1958.0
+      ]
+    ],
+    "table_id": "1-1081459-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "What episode number had production code e4423?",
+    "generated_question": "What episode number had not production code e4423?",
+    "original_sql": "SELECT MAX(col1) FROM table_1_10842344_1 WHERE col6 = 'E4423';",
+    "generated_sql": "SELECT MAX(col1) FROM table_1_10842344_1 WHERE col6 != 'E4423';",
+    "original_answers": [
+      [
+        null
+      ]
+    ],
+    "generated_answers": [
+      [
+        24.0
+      ]
+    ],
+    "table_id": "1-10842344-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "What's the latest episode in a season where the U.S. viewers totaled 14.37 million?",
+    "generated_question": "not What's the latest episode in a season where the U.S. viewers totaled 14.37 million?",
+    "original_sql": "SELECT MAX(col1) FROM table_1_10842344_1 WHERE col7 = '14.37';",
+    "generated_sql": "SELECT MAX(col1) FROM table_1_10842344_1 WHERE col7 != '14.37';",
+    "original_answers": [
+      [
+        16.0
+      ]
+    ],
+    "generated_answers": [
+      [
+        24.0
+      ]
+    ],
+    "table_id": "1-10842344-1"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "How many seasons is the season finale on May 26, 2010?",
+    "generated_question": "How many seasons is not the season finale on May 26, 2010?",
+    "original_sql": "SELECT COUNT(col0) FROM table_1_10819266_8 WHERE col4 = 'May 26, 2010';",
+    "generated_sql": "SELECT COUNT(col0) FROM table_1_10819266_8 WHERE col4 != 'May 26, 2010';",
+    "original_answers": [
+      [
+        0
+      ]
+    ],
+    "generated_answers": [
+      [
+        8
+      ]
+    ],
+    "table_id": "1-10819266-8"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "What is the season finale for season 4?",
+    "generated_question": "What is not the season finale for season 4?",
+    "original_sql": "SELECT col4 FROM table_1_10819266_8 WHERE col0 = 4;",
+    "generated_sql": "SELECT col4 FROM table_1_10819266_8 WHERE col0 != 4;",
+    "original_answers": [
+      [
+        "may 21, 2008"
+      ]
+    ],
+    "generated_answers": [
+      [
+        "may 18, 2005"
+      ],
+      [
+        "may 17, 2006"
+      ],
+      [
+        "may 16, 2007"
+      ],
+      [
+        "may 14, 2009"
+      ],
+      [
+        "may 26, 2010"
+      ],
+      [
+        "may 13, 2011"
+      ],
+      [
+        "may 11, 2012"
+      ]
+    ],
+    "table_id": "1-10819266-8"
+  },
+  {
+    "type": "numerical_expansion",
+    "original_question": "What is the season finale for season 4?",
+    "generated_question": "What is the season finale for season 4?",
+    "original_sql": "SELECT col4 FROM table_1_10819266_8 WHERE col0 = 4;",
+    "generated_sql": "SELECT col4 FROM table_1_10819266_8 WHERE col0 NOT BETWEEN 3 AND 4;",
+    "original_answers": [
+      [
+        "may 21, 2008"
+      ]
+    ],
+    "generated_answers": [
+      [
+        "may 18, 2005"
+      ],
+      [
+        "may 17, 2006"
+      ],
+      [
+        "may 14, 2009"
+      ],
+      [
+        "may 26, 2010"
+      ],
+      [
+        "may 13, 2011"
+      ],
+      [
+        "may 11, 2012"
+      ]
+    ],
+    "table_id": "1-10819266-8"
+  },
+  {
+    "type": "basic_negation",
+    "original_question": "How many season premiers have a rank of #21?",
+    "generated_question": "How many season premiers have not a rank of # 21?",
+    "original_sql": "SELECT col3 FROM table_1_10819266_8 WHERE col6 = '#21';",
+    "generated_sql": "SELECT col3 FROM table_1_10819266_8 WHERE col6 != '#21';",
+    "original_answers": [
+      [
+        "september 22, 2004"
+      ]
+    ],
+    "generated_answers": [
+      [
+        "september 28, 2005"
+      ],
+      [
+        "september 20, 2006"
+      ],
+      [
+        "september 26, 2007"
+      ],
+      [
+        "september 24, 2008"
+      ],
+      [
+        "september 23, 2009"
+      ],
+      [
+        "september 24, 2010"
+      ],
+      [
+        "september 23, 2011"
+      ]
+    ],
+    "table_id": "1-10819266-8"
+  }
+]

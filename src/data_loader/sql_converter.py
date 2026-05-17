@@ -14,51 +14,85 @@ COND_OPS = {
 }
 
 
+def get_column_name(index):
+
+    # WikiSQL SQLite columns are:
+    # col0, col1, col2 ...
+
+    return f"col{index}"
+
+
 def convert_to_sql(example, table):
 
     sql_data = example["sql"]
 
+    # -----------------------------------
     # SELECT column
+    # -----------------------------------
+
     sel_index = sql_data["sel"]
 
-    sel_col = table["header"][sel_index]
+    sel_col = get_column_name(sel_index)
 
+    # -----------------------------------
     # Aggregation
+    # -----------------------------------
+
     agg = AGG_OPS[sql_data["agg"]]
 
     if agg:
-        select_clause = f"SELECT {agg}([{sel_col}])"
+        select_clause = f"SELECT {agg}({sel_col})"
     else:
-        select_clause = f"SELECT [{sel_col}]"
+        select_clause = f"SELECT {sel_col}"
 
-    # FROM
-    from_clause = f"FROM [{table['id']}]"
+    # -----------------------------------
+    # Table name conversion
+    # -----------------------------------
 
-    # WHERE
+    table_name = "table_" + table["id"].replace("-", "_")
+
+    from_clause = f"FROM {table_name}"
+
+    # -----------------------------------
+    # WHERE conditions
+    # -----------------------------------
+
     conditions = []
 
     for cond in sql_data["conds"]:
 
         col_index, op_index, value = cond
 
-        col_name = table["header"][col_index]
+        col_name = get_column_name(col_index)
 
         op = COND_OPS[op_index]
 
-        # String handling
+        # Escape strings
         if isinstance(value, str):
+
             value = value.replace("'", "''")
+
             value = f"'{value}'"
 
-        condition = f"[{col_name}] {op} {value}"
+        condition = f"{col_name} {op} {value}"
 
         conditions.append(condition)
 
-    # Join conditions
+    # -----------------------------------
+    # Build WHERE clause
+    # -----------------------------------
+
     if conditions:
+
         where_clause = " WHERE " + " AND ".join(conditions)
+
     else:
+
         where_clause = ""
+
+    # -----------------------------------
+    # Final query
+    # -----------------------------------
 
     query = f"{select_clause} {from_clause}{where_clause};"
 

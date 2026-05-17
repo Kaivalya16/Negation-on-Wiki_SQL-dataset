@@ -41,7 +41,8 @@ print(query)
 # Execute query
 # -----------------------------
 
-results = execute_query(query)
+response = execute_query(query)
 
-print("\nRESULTS:")
-print(results)
+print("\nEXECUTION RESPONSE:")
+
+print(response)

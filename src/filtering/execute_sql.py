@@ -16,14 +16,17 @@ def execute_query(query):
 
         results = cursor.fetchall()
 
-        conn.close()
-
-        return results
+        return {
+            "success": True,
+            "results": results
+        }
 
     except Exception as e:
 
+        return {
+            "success": False,
+            "error": str(e)
+        }
+
+    finally:
         conn.close()
-
-        print("SQL ERROR:", e)
-
-        return None

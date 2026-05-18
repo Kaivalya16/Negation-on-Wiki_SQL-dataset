@@ -33,7 +33,8 @@ OUTPUT_PATH = (
     "advanced_negqa_dataset.json"
 )
 
-MAX_SAMPLES = 500
+MAX_SAMPLES = 10000
+SAVE_EVERY = 500
 
 
 # -----------------------------------
@@ -158,6 +159,27 @@ with open(TRAIN_PATH,
                         generated_dataset.append(
                             sample
                         )
+
+                        # Periodic save
+                        if len(generated_dataset) % SAVE_EVERY == 0:
+
+                            with open(
+                                OUTPUT_PATH,
+                                "w",
+                                encoding="utf-8"
+                            ) as f:
+
+                                json.dump(
+                                    generated_dataset,
+                                    f,
+                                    indent=2,
+                                    ensure_ascii=False
+                                )
+
+                            print(
+                                f"\nCheckpoint saved:"
+                                f" {len(generated_dataset)} samples"
+                            )
 
             except Exception as e:
 
